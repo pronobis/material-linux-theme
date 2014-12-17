@@ -1,7 +1,6 @@
 material-linux-theme
 ====================
-
-Auto-generated theme files for various Linux apps employing the Android Material color palette. The goal is to easily generate consistent themes for all the apps in your Linux desktop. Currently only a dark theme is implemented.
+Auto-generated set of consistent themes for a Linux desktop based on the Android Material color palette. The goal is to easily generate themes for all the apps in your Linux desktop. Currently only a dark theme using Material color palette is implemented.
 
 Themes for the following apps are available at this point:
 * GTK 2.0
