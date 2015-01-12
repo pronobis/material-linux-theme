@@ -99,6 +99,11 @@
  '(flycheck-error      ((t (:underline (:color "[material:error-tx]"   :style wave)))))
  '(flycheck-warning    ((t (:underline (:color "[material:warning-tx]" :style wave)))))
 
+ ;; RTags outlines
+ '(rtags-errline       ((t (:underline (:color "[material:error-tx]"   :style wave)))))
+ '(rtags-warnline      ((t (:underline (:color "[material:warning-tx]" :style wave)))))
+ '(rtags-fixitline     ((t (:underline (:color "[material:success-tx]" :style wave)))))
+
  ;; Helm
  `(helm-M-x-key              ((t (:foreground "[material:text-link-tx]" :underline nil))))
  `(helm-candidate-number     ((t (:foreground "[material:window-title-active-tx]" :background "[material:window-title-active-bg]"))))

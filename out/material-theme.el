@@ -99,6 +99,11 @@
  '(flycheck-error      ((t (:underline (:color "#e84e40"   :style wave)))))
  '(flycheck-warning    ((t (:underline (:color "#ffa726" :style wave)))))
 
+ ;; RTags outlines
+ '(rtags-errline       ((t (:underline (:color "#e84e40" :style wave)))))
+ '(rtags-warnline       ((t (:underline (:color "#ffa726" :style wave)))))
+ '(rtags-fixitline       ((t (:underline (:color "#2baf2b" :style wave)))))
+
  ;; Helm
  `(helm-M-x-key              ((t (:foreground "#738ffe" :underline nil))))
  `(helm-candidate-number     ((t (:foreground "#ffffff" :background "#3f51b5"))))
