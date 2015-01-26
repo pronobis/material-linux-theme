@@ -140,8 +140,8 @@ colors = {
     "menu-selected-bg":           "primary-dark",
     "menu-selected-tx":           "text-normal",
     # Tooltips
-    "tooltip-bg":                 "bg-light",
-    "tooltip-tx":                 "text-normal",
+    "tooltip-bg":                 "text-normal",
+    "tooltip-tx":                 "bg-normal",
     # Scrollbars
     "scrollbar-bg":               "bg-normal",
     "scrollbar-fg":               "primary-dark",
@@ -177,7 +177,12 @@ colors = {
     "source-whitespace-tx":       "semantic5",
     # Text
     "text-link-tx":               "semantic8",
-    "text-section-tx":            "semantic3",
+    "text-tag-tx":                "semantic11",
+    "text-section1-tx":           "semantic3",
+    "text-section2-tx":           "semantic9",
+    "text-section3-tx":           "semantic8",
+    "text-section4-tx":           "semantic10",
+    "text-section5-tx":           "semantic2",
     # Basic VC elements
     "vc-branch-tx":               "semantic1",
     "vc-tag-tx":                  "semantic4",
