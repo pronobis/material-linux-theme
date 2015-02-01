@@ -295,6 +295,9 @@
  ;;`(org-verse ((t (:foreground nil :background nil))))
  ;;`(org-warning ((t (:foreground nil :background nil))))
 
+ ;; Calendar
+ `(calendar-weekday-header ((t (:foreground "#2baf2b" :background nil))))
+ `(calendar-weekend-header ((t (:foreground "#e84e40" :background nil))))
 
  ;; VC
  `(diff-hl-insert  ((t (:foreground "#72d572"        :background "#144517"))))
