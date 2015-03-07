@@ -39,7 +39,7 @@
    `(sml/prefix     ((t :foreground "[material:semantic4]"        )))
    `(sml/projectile ((t :foreground "[material:semantic4]"        )))
    `(sml/filename   ((t :foreground "[material:accent2-normal]"   )))
-   `(sml/sudo       ((t :foreground "[material:accent-normal]"    )))
+   `(sml/sudo       ((t (:foreground "[material:window-bg]" :background "[material:accent-normal]"))))
    `(sml/folder     ((t :foreground "[material:file-directory-tx]")))
 
    ;; 3) - Empty filling combined with some info.

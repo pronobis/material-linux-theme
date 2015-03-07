@@ -39,7 +39,7 @@
    `(sml/prefix     ((t :foreground "#9ccc65"        )))
    `(sml/projectile ((t :foreground "#9ccc65"        )))
    `(sml/filename   ((t :foreground "#ffc400"   )))
-   `(sml/sudo       ((t :foreground "#ff2d6f"    )))
+   `(sml/sudo       ((t (:foreground "#1f1f1f" :background "#ff2d6f"))))
    `(sml/folder     ((t :foreground "#ffffff")))
 
    ;; 3) - Empty filling combined with some info.
