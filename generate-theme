@@ -20,6 +20,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
+import sys
 import re
 from x256 import x256
 from material import material_palette
@@ -67,7 +68,7 @@ def main():
         re.escape(key) for key in colors2.keys()) + r')')
 
     # Get def files
-    script_dir = os.path.dirname(__file__)
+    script_dir = os.path.dirname(os.path.abspath(os.path.realpath(sys.argv[0])))
     def_dir = os.path.join(script_dir, './defs')
     out_dir = os.path.join(script_dir, './out')
     def_files = [f for f in os.listdir(def_dir)
