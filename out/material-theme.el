@@ -75,6 +75,8 @@
  `(font-latex-math-face          ((t (:inherit font-lock-string-face))))
  `(font-latex-verbatim-face      ((t (:inherit font-lock-preprocessor-face))))
  `(font-latex-sedate-face        ((t (:inherit font-lock-keyword-face))))
+ `(TeX-error-description-error   ((t (:inherit error :weight bold))))
+ `(TeX-error-description-warning ((t (:inherit warning :weight bold))))
 
  ;; Markdown
  `(markdown-bold-face    ((t (:inherit default :weight bold))))
