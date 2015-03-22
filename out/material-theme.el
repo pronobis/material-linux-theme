@@ -77,6 +77,7 @@
  `(font-latex-sedate-face        ((t (:inherit font-lock-keyword-face))))
  `(TeX-error-description-error   ((t (:inherit error :weight bold))))
  `(TeX-error-description-warning ((t (:inherit warning :weight bold))))
+ `(preview-face                  ((t (:inherit secondary-selection))))
 
  ;; Markdown
  `(markdown-bold-face    ((t (:inherit default :weight bold))))
