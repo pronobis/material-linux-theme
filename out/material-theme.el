@@ -13,7 +13,8 @@
 
  ;; Cursor
  '(cursor  ((t (:foreground "#121212" :background "#ffc400"))))
- '(cua-global-mark ((t (:foreground "#121212" :background "#ffc400"))))
+ '(cua-global-mark ((t (:inherit cursor))))
+ '(mc/cursor-face ((t (:inherit cursor))))
  '(hl-line ((t (:background "#1f1f1f"))))
 
  ;; Basic

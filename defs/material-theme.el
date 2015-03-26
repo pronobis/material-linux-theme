@@ -13,7 +13,8 @@
 
  ;; Cursor
  '(cursor  ((t (:foreground "[material:view-bg]" :background "[material:cursor-normal-bg]"))))
- '(cua-global-mark ((t (:foreground "[material:view-bg]" :background "[material:cursor-normal-bg]"))))
+ '(cua-global-mark ((t (:inherit cursor))))
+ '(mc/cursor-face ((t (:inherit cursor))))
  '(hl-line ((t (:background "[material:window-title-inactive-bg]"))))
 
  ;; Basic
