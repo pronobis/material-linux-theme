@@ -19,7 +19,7 @@
 
   (custom-theme-set-faces
    'smart-mode-line-material
-   `(sml/global            ((t :background "[material:window-bg]")))
+   `(sml/global            ((t :background "[material:window-title-inactive-bg]")))
 
    ;; 1) - Positions etc.
    ;; Use fringe/like sml/global as default face
@@ -30,16 +30,16 @@
    `(sml/client            ((t :inherit sml/global                                                                      )))
    `(sml/mule-info         ((t :inherit sml/global                                                                      )))
    `(sml/not-modified      ((t :inherit sml/global                                                                      )))
-   `(sml/modified          ((t :background "[material:file-modified-tx]" :foreground "[material:window-bg]" :weight bold)))
-   `(sml/outside-modified  ((t :background "[material:error-tx]"         :foreground "[material:window-bg]" :weight bold)))
-   '(sml/read-only         ((t :background "[material:file-readonly-tx]" :foreground "[material:window-bg]" :weight bold)))
+   `(sml/modified          ((t :background "[material:file-modified-tx]" :foreground "[material:window-title-inactive-bg]" :weight bold)))
+   `(sml/outside-modified  ((t :background "[material:error-tx]"         :foreground "[material:window-title-inactive-bg]" :weight bold)))
+   '(sml/read-only         ((t :background "[material:file-readonly-tx]" :foreground "[material:window-title-inactive-bg]" :weight bold)))
 
    ;; 2) - ID
    ;; Don't specify default face, use natural modeline background instead
    `(sml/prefix     ((t :foreground "[material:semantic4]"        )))
    `(sml/projectile ((t :foreground "[material:semantic4]"        )))
    `(sml/filename   ((t :foreground "[material:accent2-normal]"   )))
-   `(sml/sudo       ((t (:foreground "[material:window-bg]" :background "[material:accent-normal]"))))
+   `(sml/sudo       ((t (:foreground "[material:window-title-inactive-bg]" :background "[material:accent-normal]"))))
    `(sml/folder     ((t :foreground "[material:file-directory-tx]")))
 
    ;; 3) - Empty filling combined with some info.

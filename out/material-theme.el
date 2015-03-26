@@ -39,8 +39,8 @@
 
  ;; Mode line & header line & powerline
  '(mode-line-buffer-id ((t (:foreground "#ffc400"))))
- '(mode-line-inactive  ((t (:box (:line-width 1 :color "#3f51b5") :foreground "#969696" :background "#1f1f1f" :slant italic))))
- '(mode-line           ((t (:box (:line-width 1 :color "#3f51b5") :foreground "#ffffff" :background "#3f51b5" :weight bold))))
+ '(mode-line-inactive  ((t (:box (:line-width 2 :color "#1f1f1f") :foreground "#969696" :background "#1f1f1f" :slant italic))))
+ '(mode-line           ((t (:box (:line-width 2 :color "#3f51b5") :foreground "#ffffff" :background "#3f51b5" :weight bold))))
  '(header-line         ((t (:box (:line-width 1 :color "#3f51b5") :foreground "#7986cb" :background "#292929" :bold t))))
  '(popup-tip-face      ((t (:foreground "#1f1f1f" :background "#dadada"))))
  '(powerline-active1   ((t (:foreground "#ffffff" :background "#3f51b5"))))
@@ -53,9 +53,10 @@
  '(ido-subdir             ((t (:foreground "#ffffff"))))
 
  ;; Search
- '(isearch		((t (:foreground "#121212" :background "#ff2d6f" :bold t))))
- '(lazy-highlight	((t (:foreground "#121212" :background "#ffc400" :bold t))))
- '(isearch-fail         ((t (:foreground "#dadada" :background "#851414"))))
+ '(isearch         ((t (:foreground "#121212" :background "#ff2d6f" :bold t))))
+ '(lazy-highlight  ((t (:foreground "#121212" :background "#ffc400" :bold t))))
+ '(isearch-fail    ((t (:foreground "#dadada" :background "#851414"))))
+ '(anzu-mode-line  ((t (:foreground "#ff2d6f" :background "#1f1f1f"))))
 
  ;; Standard font lock
  '(font-lock-builtin-face           ((t (:foreground "#26c6da"))))

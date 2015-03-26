@@ -39,12 +39,12 @@
 
  ;; Mode line & header line & powerline
  '(mode-line-buffer-id ((t (:foreground "[material:accent2-normal]"))))
- '(mode-line-inactive  ((t (:box (:line-width 1 :color "[material:window-title-active-bg]") :foreground "[material:window-title-inactive-tx]" :background "[material:window-title-inactive-bg]" :slant italic))))
- '(mode-line           ((t (:box (:line-width 1 :color "[material:window-title-active-bg]") :foreground "[material:window-title-active-tx]" :background "[material:window-title-active-bg]" :weight bold))))
+ '(mode-line-inactive  ((t (:box (:line-width 2 :color "[material:window-title-inactive-bg]") :foreground "[material:window-title-inactive-tx]" :background "[material:window-title-inactive-bg]" :slant italic))))
+ '(mode-line           ((t (:box (:line-width 2 :color "[material:window-title-active-bg]") :foreground "[material:window-title-active-tx]" :background "[material:window-title-active-bg]" :weight bold))))
  '(header-line         ((t (:box (:line-width 1 :color "[material:window-title-active-bg]") :foreground "[material:view-header-tx]" :background "[material:view-header-bg]" :bold t))))
  '(popup-tip-face      ((t (:foreground "[material:tooltip-tx]" :background "[material:tooltip-bg]"))))
  '(powerline-active1   ((t (:foreground "[material:window-title-active-tx]" :background "[material:window-title-active-bg]"))))
- '(powerline-active2   ((t (:foreground "[material:window-title-active-tx]" :background "[material:primary-normal]"))))
+ '(powerline-active2   ((t (:foreground "[material:window-title-active-tx]" :background "[material:window-title-active-bg]"))))
 
  ;; IDO
  '(ido-first-match        ((t (:foreground "[material:primary-light]" :weight bold))))
@@ -53,9 +53,10 @@
  '(ido-subdir             ((t (:foreground "[material:file-directory-tx]"))))
 
  ;; Search
- '(isearch		((t (:foreground "[material:view-highlighted-tx]" :background "[material:view-highlighted-bg]" :bold t))))
- '(lazy-highlight	((t (:foreground "[material:view-highlighted-inactive-tx]" :background "[material:view-highlighted-inactive-bg]" :bold t))))
- '(isearch-fail         ((t (:foreground "[material:view-tx]" :background "[material:error-dark]"))))
+ '(isearch         ((t (:foreground "[material:view-highlighted-tx]" :background "[material:view-highlighted-bg]" :bold t))))
+ '(lazy-highlight  ((t (:foreground "[material:view-highlighted-inactive-tx]" :background "[material:view-highlighted-inactive-bg]" :bold t))))
+ '(isearch-fail    ((t (:foreground "[material:view-tx]" :background "[material:error-dark]"))))
+ '(anzu-mode-line  ((t (:foreground "[material:accent-normal]" :background "[material:window-bg]"))))
 
  ;; Standard font lock
  '(font-lock-builtin-face           ((t (:foreground "[material:source-builtin-tx]"))))
