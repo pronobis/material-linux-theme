@@ -150,6 +150,7 @@ colors = {
     "file-directory-tx":          "text-light",
     "file-normal-tx":             "text-normal",
     "file-link-tx":               "semantic4",
+    "file-remote-tx":             "semantic4",  # Same as link
     "file-device-tx":             "semantic8",
     "file-special-tx":            "semantic2",
     "file-executable-tx":         "semantic3",
