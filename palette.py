@@ -187,11 +187,11 @@ colors = {
     # Text
     "text-link-tx":               "semantic8",
     "text-tag-tx":                "semantic11",
-    "text-section1-tx":           "semantic3",
-    "text-section2-tx":           "semantic9",
-    "text-section3-tx":           "semantic8",
-    "text-section4-tx":           "semantic10",
-    "text-section5-tx":           "semantic2",
+    "text-section1-tx":           "distinct1",
+    "text-section2-tx":           "distinct2",
+    "text-section3-tx":           "distinct3",
+    "text-section4-tx":           "distinct4",
+    "text-section5-tx":           "distinct5",
     # Basic VC elements
     "vc-branch-tx":               "semantic1",
     "vc-tag-tx":                  "semantic4",
