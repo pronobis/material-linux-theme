@@ -208,6 +208,17 @@
  '(sp-show-pair-mismatch-face ((t (:inherit show-paren-mismatch))))
  '(sp-pair-overlay-face       ((t (:inherit secondary-selection))))
 
+ ;; Highlighting
+ '(hi-yellow   ((t (:background "[material:distinct1]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct1]"))))
+ '(hi-pink     ((t (:background "[material:distinct2]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct2]"))))
+ '(hi-green    ((t (:background "[material:distinct3]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct3]"))))
+ '(hi-blue     ((t (:background "[material:distinct4]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct4]"))))
+ '(hi-black-b  ((t (:background "[material:distinct5]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct5]"))))
+ '(hi-blue-b   ((t (:background "[material:distinct6]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct6]"))))
+ '(hi-red-b    ((t (:background "[material:distinct7]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct7]"))))
+ '(hi-green-b  ((t (:background "[material:distinct8]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct8]"))))
+ '(hi-black-hb ((t (:background "[material:distinct9]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct9]"))))
+
  ;; Whitespace Mode
  '(whitespace-empty            ((t (:foreground "[material:source-whitespace-tx]" :background "[material:source-whitespace-bg]"))))
  '(whitespace-hspace           ((t (:foreground "[material:source-whitespace-tx]" :background "[material:source-whitespace-bg]"))))
@@ -632,6 +643,7 @@
  '(cua-normal-cursor-color "[material:cursor-normal-bg]")
  '(cua-overwrite-cursor-color "[material:cursor-overwrite-bg]")
  '(cua-read-only-cursor-color "[material:cursor-read-only-bg]")
+
  ;; ANSI
  '(ansi-color-names-vector
    ["[material:black]" "[material:red]" "[material:green]" "[material:yellow]" "[material:blue]" "[material:magenta]" "[material:cyan]" "[material:white]"])

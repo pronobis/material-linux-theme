@@ -208,6 +208,17 @@
  '(sp-show-pair-mismatch-face ((t (:inherit show-paren-mismatch))))
  '(sp-pair-overlay-face       ((t (:inherit secondary-selection))))
 
+ ;; Highlighting
+ '(hi-yellow   ((t (:background "#d4e157" :foreground "#121212" :weight bold :distant-foreground "#d4e157"))))
+ '(hi-pink     ((t (:background "#738ffe" :foreground "#121212" :weight bold :distant-foreground "#738ffe"))))
+ '(hi-green    ((t (:background "#ec407a" :foreground "#121212" :weight bold :distant-foreground "#ec407a"))))
+ '(hi-blue     ((t (:background "#26a69a" :foreground "#121212" :weight bold :distant-foreground "#26a69a"))))
+ '(hi-black-b  ((t (:background "#8d6e63" :foreground "#121212" :weight bold :distant-foreground "#8d6e63"))))
+ '(hi-blue-b   ((t (:background "#9ccc65" :foreground "#121212" :weight bold :distant-foreground "#9ccc65"))))
+ '(hi-red-b    ((t (:background "#ab47bc" :foreground "#121212" :weight bold :distant-foreground "#ab47bc"))))
+ '(hi-green-b  ((t (:background "#26c6da" :foreground "#121212" :weight bold :distant-foreground "#26c6da"))))
+ '(hi-black-hb ((t (:background "#2baf2b" :foreground "#121212" :weight bold :distant-foreground "#2baf2b"))))
+
  ;; Whitespace Mode
  '(whitespace-empty            ((t (:foreground "#757575" :background "#1f1f1f"))))
  '(whitespace-hspace           ((t (:foreground "#757575" :background "#1f1f1f"))))
@@ -632,6 +643,7 @@
  '(cua-normal-cursor-color "#ffc400")
  '(cua-overwrite-cursor-color "#ff2d6f")
  '(cua-read-only-cursor-color "#2baf2b")
+
  ;; ANSI
  '(ansi-color-names-vector
    ["#121212" "#e84e40" "#2baf2b" "#d4e157" "#738ffe" "#ec407a" "#26c6da" "#dadada"])
