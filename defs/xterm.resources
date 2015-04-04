@@ -1,0 +1,24 @@
+! XTerm material color scheme
+
+xterm*foreground:      [material:view-tx]
+xterm*background:      [material:view-bg]
+
+xterm*color0:          [material:black]
+xterm*color1:          [material:red]
+xterm*color2:          [material:green]
+xterm*color3:          [material:yellow]
+xterm*color4:          [material:blue]
+xterm*color5:          [material:magenta]
+xterm*color6:          [material:cyan]
+xterm*color7:          [material:white]
+xterm*color8:          [material:bright-black]
+xterm*color9:          [material:bright-red]
+xterm*color10:         [material:bright-green]
+xterm*color11:         [material:bright-yellow]
+xterm*color12:         [material:bright-blue]
+xterm*color13:         [material:bright-magenta]
+xterm*color14:         [material:bright-cyan]
+xterm*color15:         [material:bright-white]
+
+xterm*highlightColor:  [material:view-selected-bg]
+xterm*cursorColor:     [material:cursor-normal-bg]

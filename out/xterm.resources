@@ -1,0 +1,24 @@
+! XTerm material color scheme
+
+xterm*foreground:      #dadada
+xterm*background:      #121212
+
+xterm*color0:          #121212
+xterm*color1:          #e84e40
+xterm*color2:          #2baf2b
+xterm*color3:          #d4e157
+xterm*color4:          #738ffe
+xterm*color5:          #ec407a
+xterm*color6:          #26c6da
+xterm*color7:          #dadada
+xterm*color8:          #1f1f1f
+xterm*color9:          #f69988
+xterm*color10:         #72d572
+xterm*color11:         #e6ee9c
+xterm*color12:         #afbfff
+xterm*color13:         #f48fb1
+xterm*color14:         #80deea
+xterm*color15:         #ffffff
+
+xterm*highlightColor:  #303f9f
+xterm*cursorColor:     #ffc400
