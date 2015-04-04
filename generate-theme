@@ -42,7 +42,7 @@ def main():
         else:
             print("-> Skipping %s" % value)
 
-    print("\nResolving colors other colors:")
+    print("\nResolving other colors:")
     for name, value in colors.iteritems():
         z = selected_palette[value]
         colors[name] = z
