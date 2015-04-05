@@ -4,12 +4,12 @@ xterm*foreground:      #dadada
 xterm*background:      #121212
 
 xterm*color0:          #000000
-xterm*color1:          #d01716
-xterm*color2:          #0a7e07
-xterm*color3:          #afb42b
-xterm*color4:          #455ede
-xterm*color5:          #c2185b
-xterm*color6:          #0097a7
+xterm*color1:          #dd191d
+xterm*color2:          #0a8f08
+xterm*color3:          #c0ca33
+xterm*color4:          #4e6cef
+xterm*color5:          #d81b60
+xterm*color6:          #00acc1
 xterm*color7:          #969696
 xterm*color8:          #121212
 xterm*color9:          #e84e40
