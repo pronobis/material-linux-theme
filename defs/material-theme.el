@@ -201,7 +201,7 @@
 
  ;; Show paren
  '(show-paren-match    ((t (:foreground nil :background "[material:secondary-normal]" :bold t))))
- '(show-paren-mismatch ((t (:foreground nil :background "[material:error-normal]" :bold t))))
+ '(show-paren-mismatch ((t (:foreground nil :background "[material:error-fg]" :bold t))))
 
  ;; Smartparens
  '(sp-show-pair-match-face    ((t (:inherit show-paren-match))))
