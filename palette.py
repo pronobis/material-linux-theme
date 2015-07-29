@@ -61,16 +61,6 @@ selected_palette = {
     "warning-strong":     "orange-200",
     "warning-normal":     "orange-400",
     "warning-weak":       "#994300",
-    # Selected distinct colors
-    "distinct1":          "lime-400",
-    "distinct2":          "blue-400",
-    "distinct3":          "pink-400",
-    "distinct4":          "teal-400",
-    "distinct5":          "brown-400",
-    "distinct6":          "light-green-400",
-    "distinct7":          "purple-400",
-    "distinct8":          "cyan-400",
-    "distinct9":          "green-400",
     # Selected colors by ansi names
     "black":              "#121212",
     "red":                "red-400",
@@ -99,8 +89,8 @@ selected_palette = {
 }
 
 
-colors = {
-    # Views
+colors =
+# Views
     "view-bg":                    "bg-normal",        # convenient for long use
     "view-fg":                    "fg-normal",
     "view-header-bg":             "secondary-weak",
@@ -187,11 +177,15 @@ colors = {
     # Text
     "text-link-fg":               "semantic8",
     "text-tag-fg":                "semantic11",
-    "text-section1-fg":           "distinct1",
-    "text-section2-fg":           "distinct2",
-    "text-section3-fg":           "distinct3",
-    "text-section4-fg":           "distinct4",
-    "text-section5-fg":           "distinct5",
+    "text-section1-fg":           "semantic3",
+    "text-section2-fg":           "semantic8",
+    "text-section3-fg":           "semantic10",
+    "text-section4-fg":           "semantic1",
+    "text-section5-fg":           "semantic2",
+    "text-section6-fg":           "semantic4",
+    "text-section7-fg":           "semantic7",
+    "text-section8-fg":           "semantic11",
+    "text-section9-fg":           "semantic9",
     # Basic VC elements
     "vc-branch-fg":               "semantic1",
     "vc-tag-fg":                  "semantic4",
@@ -214,4 +208,3 @@ colors = {
     "diff-change-bg":             "warning-weak",
     "diff-context-fg":            "fg-weak",
     "diff-context-bg":            "bg-normal"
-}

@@ -188,15 +188,15 @@
  '(yas-field-highlight-face            ((t (:foreground "[material:view-highlighted-fg]" :background "[material:view-highlighted-bg]"))))
 
  ;; Rainbow delim
- '(rainbow-delimiters-depth-1-face ((t (:foreground "[material:distinct1]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
- '(rainbow-delimiters-depth-2-face ((t (:foreground "[material:distinct2]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
- '(rainbow-delimiters-depth-3-face ((t (:foreground "[material:distinct3]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
- '(rainbow-delimiters-depth-4-face ((t (:foreground "[material:distinct4]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
- '(rainbow-delimiters-depth-5-face ((t (:foreground "[material:distinct5]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
- '(rainbow-delimiters-depth-6-face ((t (:foreground "[material:distinct6]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
- '(rainbow-delimiters-depth-7-face ((t (:foreground "[material:distinct7]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
- '(rainbow-delimiters-depth-8-face ((t (:foreground "[material:distinct8]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
- '(rainbow-delimiters-depth-9-face ((t (:foreground "[material:distinct9]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "[material:text-section1-fg]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
+ '(rainbow-delimiters-depth-2-face ((t (:foreground "[material:text-section2-fg]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
+ '(rainbow-delimiters-depth-3-face ((t (:foreground "[material:text-section3-fg]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "[material:text-section4-fg]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "[material:text-section5-fg]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
+ '(rainbow-delimiters-depth-6-face ((t (:foreground "[material:text-section6-fg]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
+ '(rainbow-delimiters-depth-7-face ((t (:foreground "[material:text-section7-fg]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
+ '(rainbow-delimiters-depth-8-face ((t (:foreground "[material:text-section8-fg]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
+ '(rainbow-delimiters-depth-9-face ((t (:foreground "[material:text-section9-fg]" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "[material:view-fg]"))))
  '(rainbow-delimiters-unmatched-face ((t (:inherit error))))
 
  ;; Show paren
@@ -209,15 +209,15 @@
  '(sp-pair-overlay-face       ((t (:inherit secondary-selection))))
 
  ;; Highlighting
- '(hi-yellow   ((t (:background "[material:distinct1]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct1]"))))
- '(hi-pink     ((t (:background "[material:distinct2]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct2]"))))
- '(hi-green    ((t (:background "[material:distinct3]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct3]"))))
- '(hi-blue     ((t (:background "[material:distinct4]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct4]"))))
- '(hi-black-b  ((t (:background "[material:distinct5]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct5]"))))
- '(hi-blue-b   ((t (:background "[material:distinct6]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct6]"))))
- '(hi-red-b    ((t (:background "[material:distinct7]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct7]"))))
- '(hi-green-b  ((t (:background "[material:distinct8]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct8]"))))
- '(hi-black-hb ((t (:background "[material:distinct9]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:distinct9]"))))
+ '(hi-yellow   ((t (:background "[material:text-section1-fg]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:text-section1-fg]"))))
+ '(hi-pink     ((t (:background "[material:text-section2-fg]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:text-section2-fg]"))))
+ '(hi-green    ((t (:background "[material:text-section3-fg]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:text-section3-fg]"))))
+ '(hi-blue     ((t (:background "[material:text-section4-fg]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:text-section4-fg]"))))
+ '(hi-black-b  ((t (:background "[material:text-section5-fg]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:text-section5-fg]"))))
+ '(hi-blue-b   ((t (:background "[material:text-section6-fg]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:text-section6-fg]"))))
+ '(hi-red-b    ((t (:background "[material:text-section7-fg]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:text-section7-fg]"))))
+ '(hi-green-b  ((t (:background "[material:text-section8-fg]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:text-section8-fg]"))))
+ '(hi-black-hb ((t (:background "[material:text-section9-fg]" :foreground "[material:view-bg]" :weight bold :distant-foreground "[material:text-section9-fg]"))))
 
  ;; Whitespace Mode
  '(whitespace-empty            ((t (:foreground "[material:source-whitespace-fg]" :background "[material:source-whitespace-bg]"))))
