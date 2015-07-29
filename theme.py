@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-selected_palette = {
+palette = {
     # Background
     "bg-strong":          "#212121",
     "bg-normal":          "#121212",
@@ -89,7 +89,7 @@ selected_palette = {
 }
 
 
-colors =
+theme = {
     # Views
     "view-bg":                    "bg-normal",        # convenient for long use
     "view-fg":                    "fg-normal",
@@ -208,3 +208,4 @@ colors =
     "diff-change-bg":             "warning-weak",
     "diff-context-fg":            "fg-weak",
     "diff-context-bg":            "bg-normal"
+}
