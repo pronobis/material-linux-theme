@@ -46,7 +46,7 @@ palette = {
     "semantic4":          "light-green-400",
     "semantic5":          "grey-600",
     "semantic6":          "grey-800",
-    "semantic7":          "purple-300",  # 400 is simply too dark
+    "semantic7":          "purple-300",  # 400 is too dark
     "semantic8":          "blue-400",
     "semantic9":          "green-400",
     "semantic10":         "pink-400",
