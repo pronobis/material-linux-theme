@@ -29,7 +29,7 @@ relevant applications. Those theme files can be found in the `out/<theme_name>` 
 However, for convenience, you can just run the `install.sh` script which will patch the
 appropriate config files for you. The script will add/edit:
 * Midnight Commander config files `.mc/ini` and `.mc/skins/material.ini` or
-  `.config/mc/ini` and `.config/mc/skins/material.ini` dependinc on the version of MC you
+  `.config/mc/ini` and `.config/mc/skins/material.ini` depending on the version of MC you
   are using.
 * i3 Window Manager config file `.i3/config`
 
