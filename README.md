@@ -29,7 +29,7 @@ raw_colors --> color_names --> palette --> common_theme --> [app_theme]+
 ```
 
 * `raw_colors` - Raw color values
-* `color_names` - Human-friendly color names
+* `color_names` - Human-friendly color names of the Material color palette
 * `palette` - Selects a subset of colors used in the theme
 * `common_theme` - Assigns palette colors to common use-cases, provides unified look
   across all the applications
