@@ -94,7 +94,7 @@ theme = {
     "view-bg":                    "bg-normal",
     "view-fg":                    "fg-normal",
     "view-header-bg":             "secondary-weak",
-    "view-header-fg":             "primary-strong",
+    "view-header-fg":             "primary-strong",  # TODO
     "view-selected-bg":           "primary-weak",
     "view-selected-fg":           "fg-normal",
     "view-selected-inactive-bg":  "secondary-weak",
@@ -123,17 +123,18 @@ theme = {
     "window-button-urgent-bg":    "accent1-normal",
     "window-button-urgent-fg":    "fg-strong",
     # Panels
-    "panel-bg":                   "bg-strong",
+    "panel-bg":                   "bg-weak",
     "panel-fg":                   "fg-normal",
     "panel-button-active-bg":     "primary-normal",
     "panel-button-active-fg":     "fg-strong",
-    "panel-button-inactive-bg":   "bg-strong",
+    "panel-button-inactive-bg":   "bg-weak",
     "panel-button-inactive-fg":   "fg-weak",
     "panel-button-urgent-bg":     "accent1-normal",
     "panel-button-urgent-fg":     "fg-strong",
     # Menu
     "menu-bg":                    "secondary-weak",
     "menu-fg":                    "fg-normal",
+    "menu-inactive-bg":           "secondary-weak",
     "menu-inactive-fg":           "fg-weak",
     "menu-selected-bg":           "primary-weak",
     "menu-selected-fg":           "fg-normal",
@@ -144,7 +145,7 @@ theme = {
     "scrollbar-bg":               "bg-strong",
     "scrollbar-fg":               "primary-weak",
     # Basic file types
-    "file-broken-fg":             "accent1-normal",
+    "file-broken-fg":             "error-normal",
     "file-directory-fg":          "fg-strong",
     "file-normal-fg":             "fg-normal",
     "file-link-fg":               "semantic4",
@@ -192,7 +193,7 @@ theme = {
     "vc-sha-fg":                  "semantic10",
     # Cursor
     "cursor-normal-bg":           "accent2-normal",
-    "cursor-read-only-bg":        "semantic9",
+    "cursor-read-only-bg":        "green",
     "cursor-overwrite-bg":        "accent1-normal",
     "cursor-special-bg":          "semantic8",
     # Notification types
