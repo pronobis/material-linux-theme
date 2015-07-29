@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # material-linux - Auto-generated set of consistent themes for a Linux
 #                  desktop based on the Android Material color palette.
@@ -24,66 +24,91 @@ import sys
 import re
 from x256 import x256
 from material_colors import material_colors
-from theme import theme
-from palette import palette
+from theme import theme as theme_common
+from palette_dark import palette as palette_dark
+
+
+# Definition of color themes
+theme_infos = [['dark', palette_dark, theme_common]]
+
+
+def generate_theme(theme_name, palette, theme):
+    """Generate a single theme."""
+
+    # Resolve colors
+    print("-> Resolving palette colors")
+    rgb_regexp = re.compile(
+        "^#[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]$")
+    for palette_color_name, color_name in palette.items():
+        color_parts = color_name.split('-')
+        x = '-'.join(color_parts[:-1])
+        y = color_parts[-1]
+        if (len(x) > 0) and (x in material_colors) and (y in material_colors[x]):
+            palette[palette_color_name] = material_colors[x][y]
+        elif not rgb_regexp.match(color_name):
+            print("ERROR: Unknown palette color %s!" % color_name)
+            sys.exit(1)
+
+    print("-> Resolving theme colors")
+    for theme_color_name, color_name in theme.items():
+        if color_name not in palette:
+            print("ERROR: Unknown theme color %s!" % color_name)
+            sys.exit(1)
+        theme[theme_color_name] = palette[color_name]
+
+    # Compile color tags for palette and theme colors
+    tags = {}
+    # Palette
+    for color, value in palette.items():
+        tags["[material:" + color + "]"] = value
+    # Palette 256
+    for color, value in palette.items():
+        x = x256.from_hex(value[1:])
+        tags["[material256:" + color + "]"] = str(x)
+    # Theme
+    for color, value in theme.items():
+        tags["[material:" + color + "]"] = value
+    # Theme 256
+    for color, value in theme.items():
+        x = x256.from_hex(value[1:])
+        tags["[material256:" + color + "]"] = str(x)
+    # Compile replacement pattern
+    pattern = re.compile(r'(' + '|'.join(
+        re.escape(key) for key in tags.keys()) + r')')
+
+    # Get def files
+    script_dir = os.path.realpath(sys.path[0])
+    def_dir = os.path.join(script_dir, 'defs')
+    out_dir = os.path.join(script_dir, 'out')
+
+    # Process each file
+    for dir_name, _, files in os.walk(def_dir):
+        for file_name in files:
+            rel_dir = os.path.relpath(dir_name, def_dir)
+            in_file_path = os.path.join(dir_name, file_name)
+            out_file_dir = os.path.realpath(os.path.join(out_dir, theme_name, rel_dir))
+            out_file_path = os.path.join(out_file_dir, file_name)
+            print("-> Parsing file: %s" %
+                  os.path.relpath(os.path.join(rel_dir, file_name)))
+            # Make out dir
+            os.makedirs(out_file_dir, exist_ok=True)
+            # Process file
+            in_file = open(in_file_path, 'r')
+            out_file = open(out_file_path, 'w')
+            for line in in_file:
+                result = pattern.sub(lambda x: tags[x.group()], line)
+                out_file.write(result)
+            out_file.close()
+            in_file.close()
 
 
 def main():
 
-    print("Resolving palette colors:")
-    for name, value in palette.iteritems():
-        parts = value.split('-')
-        x = '-'.join(parts[:-1])
-        y = ''.join(parts[-1:])
-        if (len(x) > 0) and (x in material_colors):
-            z = material_colors[x][y]
-            print("-> Replacing %s with %s" % (value, z))
-            palette[name] = z
-        else:
-            print("-> Skipping %s" % value)
-
-    print("\nResolving theme colors:")
-    for name, value in theme.iteritems():
-        z = palette[value]
-        theme[name] = z
-        print("-> Replacing %s with %s" % (name, z))
-
-    # Compile color tags
-    colors2 = {}
-    # Palette
-    for color, value in palette.iteritems():
-        colors2["[material:" + color + "]"] = value
-    # Palette 256
-    for color, value in palette.iteritems():
-        x = x256.from_hex(value[1:])
-        colors2["[material256:" + color + "]"] = str(x)
-    # Theme
-    for color, value in theme.iteritems():
-        colors2["[material:" + color + "]"] = value
-    # Theme 256
-    for color, value in theme.iteritems():
-        x = x256.from_hex(value[1:])
-        colors2["[material256:" + color + "]"] = str(x)
-    pattern = re.compile(r'(' + '|'.join(
-        re.escape(key) for key in colors2.keys()) + r')')
-
-    # Get def files
-    script_dir = os.path.dirname(os.path.abspath(os.path.realpath(sys.argv[0])))
-    def_dir = os.path.join(script_dir, './defs')
-    out_dir = os.path.join(script_dir, './out')
-    def_files = [f for f in os.listdir(def_dir)
-                 if os.path.isfile(os.path.join(def_dir, f))]
-    print("\nParsing files: %s" % def_files)
-
-    # Process files
-    for df in def_files:
-        in_file = open(os.path.join(def_dir, df))
-        out_file = open(os.path.join(out_dir, df), 'w')
-        for line in in_file:
-            result = pattern.sub(lambda x: colors2[x.group()], line)
-            out_file.write(result)
-        out_file.close()
-        in_file.close()
+    # Generate all themes
+    for theme_info in theme_infos:
+        print("Processing theme '%s'... " % theme_info[0])
+        generate_theme(theme_info[0], theme_info[1], theme_info[2])
+        print("Done!")
 
 if __name__ == '__main__':
     main()
