@@ -91,12 +91,12 @@ palette = {
 
 theme = {
     # Views
-    "view-bg":                    "bg-normal",        # convenient for long use
+    "view-bg":                    "bg-normal",
     "view-fg":                    "fg-normal",
     "view-header-bg":             "secondary-weak",
     "view-header-fg":             "primary-strong",
     "view-selected-bg":           "primary-weak",
-    "view-selected-fg":           "fg-normal",    # keep standard text color if possible
+    "view-selected-fg":           "fg-normal",
     "view-selected-inactive-bg":  "secondary-weak",
     "view-selected-inactive-fg":  "fg-normal",
     "view-marked-bg":             "bg-normal",
