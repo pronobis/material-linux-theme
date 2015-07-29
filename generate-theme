@@ -23,45 +23,44 @@ import os
 import sys
 import re
 from x256 import x256
-from material import material_palette
-from palette import selected_palette, colors
+from material_colors import material_colors
+from palette import palette, theme
 
 
 def main():
 
-    # Resolve colors
-    print("Resolving colors in selected palette:")
-    for name, value in selected_palette.iteritems():
+    print("Resolving palette colors:")
+    for name, value in palette.iteritems():
         parts = value.split('-')
         x = '-'.join(parts[:-1])
         y = ''.join(parts[-1:])
-        if (len(x) > 0) and (x in material_palette):
-            z = material_palette[x][y]
+        if (len(x) > 0) and (x in material_colors):
+            z = material_colors[x][y]
             print("-> Replacing %s with %s" % (value, z))
-            selected_palette[name] = z
+            palette[name] = z
         else:
             print("-> Skipping %s" % value)
 
-    print("\nResolving other colors:")
-    for name, value in colors.iteritems():
-        z = selected_palette[value]
-        colors[name] = z
+    print("\nResolving theme colors:")
+    for name, value in theme.iteritems():
+        z = palette[value]
+        theme[name] = z
         print("-> Replacing %s with %s" % (name, z))
 
     # Compile color tags
     colors2 = {}
     # Palette
-    for color, value in selected_palette.iteritems():
+    for color, value in palette.iteritems():
         colors2["[material:" + color + "]"] = value
     # Palette 256
-    for color, value in selected_palette.iteritems():
+    for color, value in palette.iteritems():
         x = x256.from_hex(value[1:])
         colors2["[material256:" + color + "]"] = str(x)
-    # Other colors
-    for color, value in colors.iteritems():
+    # Theme
+    for color, value in theme.iteritems():
         colors2["[material:" + color + "]"] = value
-    # Other colors 256
-    for color, value in colors.iteritems():
+    # Theme 256
+    for color, value in theme.iteritems():
         x = x256.from_hex(value[1:])
         colors2["[material256:" + color + "]"] = str(x)
     pattern = re.compile(r'(' + '|'.join(
