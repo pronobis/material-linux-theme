@@ -52,15 +52,15 @@ selected_palette = {
     "semantic10":         "pink-400",
     "semantic11":         "cyan-400",
     # Success/error/warning colors
-    "error-strong":       "red-200",
-    "error-normal":       "red-400",
-    "error-weak":         "#851414",
     "success-strong":     "green-200",
     "success-normal":     "green-400",
     "success-weak":       "#144517",
     "warning-strong":     "orange-200",
     "warning-normal":     "orange-400",
     "warning-weak":       "#994300",
+    "error-strong":       "red-200",
+    "error-normal":       "red-400",
+    "error-weak":         "#851414",
     # Selected colors by ansi names
     "black":              "#121212",
     "red":                "red-400",
