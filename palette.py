@@ -19,9 +19,9 @@
 
 selected_palette = {
     # Background
-    "bg-dark":            "#000000",
-    "bg-normal":          "#121212",
     "bg-light":           "#212121",
+    "bg-normal":          "#121212",
+    "bg-dark":            "#000000",
     # Foreground
     "fg-light":           "#ffffff",
     "fg-normal":          "#dadada",
