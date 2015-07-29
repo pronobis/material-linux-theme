@@ -19,9 +19,9 @@
 
 selected_palette = {
     # Background
-    "bg-dark":            "#121212",
-    "bg-normal":          "#202020",
-    "bg-light":           "#292929",
+    "bg-dark":            "#000000",
+    "bg-normal":          "#121212",
+    "bg-light":           "#212121",
     # Foreground
     "fg-light":           "#ffffff",
     "fg-normal":          "#dadada",
@@ -101,57 +101,57 @@ selected_palette = {
 
 colors = {
     # Views
-    "view-bg":                    "bg-dark",        # convenient for long use
+    "view-bg":                    "bg-normal",        # convenient for long use
     "view-tx":                    "fg-normal",
-    "view-header-bg":             "bg-light",
+    "view-header-bg":             "secondary-dark",
     "view-header-tx":             "primary-light",
     "view-selected-bg":           "primary-dark",
     "view-selected-tx":           "fg-normal",    # keep standard text color if possible
     "view-selected-inactive-bg":  "secondary-dark",
     "view-selected-inactive-tx":  "fg-normal",
-    "view-marked-bg":             "bg-dark",
+    "view-marked-bg":             "bg-normal",
     "view-marked-tx":             "accent2-normal",
-    "view-marked-inactive-bg":    "bg-dark",
+    "view-marked-inactive-bg":    "bg-normal",
     "view-marked-inactive-tx":    "accent2-dark",
     "view-highlighted-bg":        "accent-normal",
-    "view-highlighted-tx":        "bg-dark",
+    "view-highlighted-tx":        "bg-normal",
     "view-highlighted-inactive-bg": "accent2-normal",
-    "view-highlighted-inactive-tx": "bg-dark",
+    "view-highlighted-inactive-tx": "bg-normal",
     # Windows
-    "window-bg":                  "bg-normal",
+    "window-bg":                  "bg-light",
     "window-tx":                  "fg-normal",
     "window-title-active-bg":     "primary-normal",
     "window-title-active-tx":     "fg-light",
-    "window-title-inactive-bg":   "bg-normal",
+    "window-title-inactive-bg":   "bg-light",
     "window-title-inactive-tx":   "fg-dark",
     "window-title-urgent-bg":     "accent-dark",
     "window-title-urgent-tx":     "fg-light",
     "window-button-active-bg":    "primary-dark",
     "window-button-active-tx":    "fg-light",
-    "window-button-inactive-bg":  "bg-normal",
+    "window-button-inactive-bg":  "bg-light",
     "window-button-inactive-tx":  "fg-dark",
     "window-button-urgent-bg":    "accent-normal",
     "window-button-urgent-tx":    "fg-light",
     # Panels
-    "panel-bg":                   "bg-normal",
+    "panel-bg":                   "bg-light",
     "panel-tx":                   "fg-normal",
     "panel-button-active-bg":     "primary-normal",
     "panel-button-active-tx":     "fg-light",
-    "panel-button-inactive-bg":   "bg-normal",
+    "panel-button-inactive-bg":   "bg-light",
     "panel-button-inactive-tx":   "fg-dark",
     "panel-button-urgent-bg":     "accent-normal",
     "panel-button-urgent-tx":     "fg-light",
     # Menu
-    "menu-bg":                    "bg-light",
+    "menu-bg":                    "secondary-dark",
     "menu-tx":                    "fg-normal",
     "menu-inactive-tx":           "fg-dark",
     "menu-selected-bg":           "primary-dark",
     "menu-selected-tx":           "fg-normal",
     # Tooltips
     "tooltip-bg":                 "fg-normal",
-    "tooltip-tx":                 "bg-normal",
+    "tooltip-tx":                 "bg-light",
     # Scrollbars
-    "scrollbar-bg":               "bg-normal",
+    "scrollbar-bg":               "bg-light",
     "scrollbar-fg":               "primary-dark",
     # Basic file types
     "file-broken-tx":             "accent-normal",
@@ -182,7 +182,7 @@ colors = {
     "source-type-tx":             "semantic10",
     "source-constant-tx":         "semantic9",
     "source-warning-tx":          "accent2-normal",  # DEPRECATED, USE WARNING
-    "source-whitespace-bg":       "bg-normal",
+    "source-whitespace-bg":       "bg-light",
     "source-whitespace-tx":       "semantic5",
     # Text
     "text-link-tx":               "semantic8",
@@ -213,5 +213,5 @@ colors = {
     "diff-change-tx":             "warning-light",
     "diff-change-bg":             "warning-dark",
     "diff-context-tx":            "fg-dark",
-    "diff-context-bg":            "bg-dark"
+    "diff-context-bg":            "bg-normal"
 }
