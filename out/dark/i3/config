@@ -1,10 +1,13 @@
-# Windows
+# Window colors
 client.focused              #3f51b5 #3f51b5 #ffffff #3f51b5
 client.focused_inactive     #212121 #212121 #969696 #212121
 client.unfocused            #212121 #212121 #969696 #212121
 client.urgent               #e00032 #e00032 #ffffff #e00032
 
 # Bar
+bar {
+
+    # Bar colors
     colors {
         background #000000
         statusline #000000
@@ -14,3 +17,4 @@ client.urgent               #e00032 #e00032 #ffffff #e00032
         inactive_workspace #000000 #000000 #969696
         urgent_workspace   #ff2d6f #ff2d6f #ffffff
     }
+}

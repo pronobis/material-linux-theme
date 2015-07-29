@@ -1,10 +1,13 @@
-# Windows
+# Window colors
 client.focused              [material:window-title-active-bg] [material:window-title-active-bg] [material:window-title-active-fg] [material:window-title-active-bg]
 client.focused_inactive     [material:window-title-inactive-bg] [material:window-title-inactive-bg] [material:window-title-inactive-fg] [material:window-title-inactive-bg]
 client.unfocused            [material:window-title-inactive-bg] [material:window-title-inactive-bg] [material:window-title-inactive-fg] [material:window-title-inactive-bg]
 client.urgent               [material:window-title-urgent-bg] [material:window-title-urgent-bg] [material:window-title-urgent-fg] [material:window-title-urgent-bg]
 
 # Bar
+bar {
+
+    # Bar colors
     colors {
         background [material:panel-bg]
         statusline [material:panel-bg]
@@ -14,3 +17,4 @@ client.urgent               [material:window-title-urgent-bg] [material:window-t
         inactive_workspace [material:panel-button-inactive-bg] [material:panel-button-inactive-bg] [material:panel-button-inactive-fg]
         urgent_workspace   [material:panel-button-urgent-bg] [material:panel-button-urgent-bg] [material:panel-button-urgent-fg]
     }
+}
