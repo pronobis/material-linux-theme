@@ -24,7 +24,7 @@
  '(highlight            ((t (:foreground "[material:view-highlighted-fg]" :background "[material:view-highlighted-bg]"))))
  '(link                 ((t (:foreground "[material:text-link-fg]"))))
  '(button               ((t (:inherit link))))
- '(linum                ((t (:foreground "[material:fg-dark]" :background nil))))
+ '(linum                ((t (:foreground "[material:fg-weak]" :background nil))))
 
  ;; Errors and warnings
  '(error                ((t (:foreground "[material:error-fg]"))))
@@ -48,7 +48,7 @@
  '(powerline-active2   ((t (:foreground "[material:window-title-active-fg]" :background "[material:window-title-active-bg]"))))
 
  ;; IDO
- '(ido-first-match        ((t (:foreground "[material:primary-light]" :weight bold))))
+ '(ido-first-match        ((t (:foreground "[material:primary-strong]" :weight bold))))
  '(ido-only-match         ((t (:inherit ido-first-match))))
  '(ido-incomplete-regexp  ((t (:inherit warning))))
  '(ido-subdir             ((t (:foreground "[material:file-directory-fg]"))))
@@ -56,7 +56,7 @@
  ;; Search
  '(isearch         ((t (:foreground "[material:view-highlighted-fg]" :background "[material:view-highlighted-bg]" :bold t))))
  '(lazy-highlight  ((t (:foreground "[material:view-highlighted-inactive-fg]" :background "[material:view-highlighted-inactive-bg]" :bold t))))
- '(isearch-fail    ((t (:foreground "[material:view-fg]" :background "[material:error-dark]"))))
+ '(isearch-fail    ((t (:foreground "[material:view-fg]" :background "[material:error-weak]"))))
  '(anzu-mode-line  ((t (:foreground "[material:accent1-normal]" :background "[material:window-bg]"))))
 
  ;; Standard font lock
