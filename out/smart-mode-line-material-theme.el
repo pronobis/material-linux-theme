@@ -19,7 +19,7 @@
 
   (custom-theme-set-faces
    'smart-mode-line-material
-   `(sml/global            ((t :background "#1f1f1f")))
+   `(sml/global            ((t :background "#212121")))
 
    ;; 1) - Positions etc.
    ;; Use fringe/like sml/global as default face
@@ -30,16 +30,16 @@
    `(sml/client            ((t :inherit sml/global                                                                      )))
    `(sml/mule-info         ((t :inherit sml/global                                                                      )))
    `(sml/not-modified      ((t :inherit sml/global                                                                      )))
-   `(sml/modified          ((t :background "#ff2d6f" :foreground "#1f1f1f" :weight bold)))
-   `(sml/outside-modified  ((t :background "#e84e40"         :foreground "#1f1f1f" :weight bold)))
-   '(sml/read-only         ((t :background "#2baf2b" :foreground "#1f1f1f" :weight bold)))
+   `(sml/modified          ((t :background "#ff2d6f" :foreground "#212121" :weight bold)))
+   `(sml/outside-modified  ((t :background "#e84e40"         :foreground "#212121" :weight bold)))
+   '(sml/read-only         ((t :background "#2baf2b" :foreground "#212121" :weight bold)))
 
    ;; 2) - ID
    ;; Don't specify default face, use natural modeline background instead
    `(sml/prefix     ((t :foreground "#9ccc65"        )))
    `(sml/projectile ((t :foreground "#9ccc65"        )))
    `(sml/filename   ((t :foreground "#ffc400"   )))
-   `(sml/sudo       ((t (:foreground "#1f1f1f" :background "#ff2d6f"))))
+   `(sml/sudo       ((t (:foreground "#212121" :background "#ff2d6f"))))
    `(sml/folder     ((t :foreground "#ffffff")))
 
    ;; 3) - Empty filling combined with some info.

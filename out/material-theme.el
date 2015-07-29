@@ -8,14 +8,14 @@
 (custom-theme-set-faces
  'material ;; you must use the same theme name here...
  '(default ((t (:foreground "#dadada" :background "#121212"))))
- '(fringe  ((t (:background "#1f1f1f"))))
+ '(fringe  ((t (:background "#212121"))))
  '(vertical-border ((t ( :foreground "#3f51b5" :background "#3f51b5"))))
 
  ;; Cursor
  '(cursor  ((t (:foreground "#121212" :background "#ffc400"))))
  '(cua-global-mark ((t (:inherit cursor))))
  '(mc/cursor-face ((t (:inherit cursor))))
- '(hl-line ((t (:background "#1f1f1f"))))
+ '(hl-line ((t (:background "#212121"))))
 
  ;; Basic
  '(region               ((t (:background "#303f9f"))))
@@ -40,10 +40,10 @@
 
  ;; Mode line & header line & powerline
  '(mode-line-buffer-id ((t (:foreground "#ffc400"))))
- '(mode-line-inactive  ((t (:box (:line-width 2 :color "#1f1f1f") :foreground "#969696" :background "#1f1f1f" :slant italic))))
+ '(mode-line-inactive  ((t (:box (:line-width 2 :color "#212121") :foreground "#969696" :background "#212121" :slant italic))))
  '(mode-line           ((t (:box (:line-width 2 :color "#3f51b5") :foreground "#ffffff" :background "#3f51b5" :weight bold))))
- '(header-line         ((t (:box (:line-width 1 :color "#3f51b5") :foreground "#7986cb" :background "#292929" :bold t))))
- '(popup-tip-face      ((t (:foreground "#1f1f1f" :background "#dadada"))))
+ '(header-line         ((t (:box (:line-width 1 :color "#3f51b5") :foreground "#7986cb" :background "#263238" :bold t))))
+ '(popup-tip-face      ((t (:foreground "#212121" :background "#dadada"))))
  '(powerline-active1   ((t (:foreground "#ffffff" :background "#3f51b5"))))
  '(powerline-active2   ((t (:foreground "#ffffff" :background "#3f51b5"))))
 
@@ -57,7 +57,7 @@
  '(isearch         ((t (:foreground "#121212" :background "#ff2d6f" :bold t))))
  '(lazy-highlight  ((t (:foreground "#121212" :background "#ffc400" :bold t))))
  '(isearch-fail    ((t (:foreground "#dadada" :background "#851414"))))
- '(anzu-mode-line  ((t (:foreground "#ff2d6f" :background "#1f1f1f"))))
+ '(anzu-mode-line  ((t (:foreground "#ff2d6f" :background "#212121"))))
 
  ;; Standard font lock
  '(font-lock-builtin-face           ((t (:foreground "#26c6da"))))
@@ -156,7 +156,7 @@
  '(helm-match                ((t (:foreground "#ff2d6f" :background "#121212"))))
  '(helm-selection            ((t (:foreground "#dadada" :background "#303f9f" :bold t))))
  '(helm-selection-line       ((t (:foreground "#dadada" :background "#303f9f"))))
- '(helm-source-header        ((t (:foreground "#7986cb" :background "#292929" :bold t))))
+ '(helm-source-header        ((t (:foreground "#7986cb" :background "#263238" :bold t))))
  '(helm-visible-mark         ((t (:foreground "#ffc400" :background nil :bold t))))
  '(helm-buffer-directory     ((t (:inherit helm-ff-directory))))
  '(helm-buffer-file          ((t (:inherit default))))
@@ -169,15 +169,15 @@
 
  ;; Company Mode
  '(company-preview-common            ((t (:foreground "#ff2d6f"                                             ))))
- '(company-scrollbar-bg              ((t (:foreground nil                           :background "#1f1f1f"    ))))
+ '(company-scrollbar-bg              ((t (:foreground nil                           :background "#212121"    ))))
  '(company-scrollbar-fg              ((t (:foreground nil                           :background "#303f9f"    ))))
- '(company-tooltip                   ((t (:foreground "#dadada"          :background "#292929"          :bold t))))
- '(company-tooltip-common            ((t (:foreground "#ff2d6f"    :background "#292929"          :bold t))))
+ '(company-tooltip                   ((t (:foreground "#dadada"          :background "#263238"          :bold t))))
+ '(company-tooltip-common            ((t (:foreground "#ff2d6f"    :background "#263238"          :bold t))))
  '(company-tooltip-common-selection  ((t (:foreground "#ff2d6f"    :background "#303f9f" :bold t))))
  '(company-tooltip-mouse             ((t (:foreground "#dadada" :background "#303f9f" :bold t))))
  '(company-tooltip-selection         ((t (:foreground "#dadada" :background "#303f9f" :bold t))))
  '(company-tooltip-search            ((t (:foreground "#121212" :background "#ff2d6f" :bold t))))
- '(company-tooltip-annotation        ((t (:foreground "#d4e157"           :background "#292929"         ))))
+ '(company-tooltip-annotation        ((t (:foreground "#d4e157"           :background "#263238"         ))))
  '(company-template-field            ((t (:foreground "#121212" :background "#ff2d6f"))))
  ;;'(company-echo               ((t (:foreground nil :background nil))))
  ;;'(company-echo-common ((t (:foreground nil :background "firebrick4"))))
@@ -194,7 +194,7 @@
  '(rainbow-delimiters-depth-4-face ((t (:foreground "#26a69a" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
  '(rainbow-delimiters-depth-5-face ((t (:foreground "#8d6e63" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
  '(rainbow-delimiters-depth-6-face ((t (:foreground "#9ccc65" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
- '(rainbow-delimiters-depth-7-face ((t (:foreground "#ab47bc" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
+ '(rainbow-delimiters-depth-7-face ((t (:foreground "#ba68c8" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
  '(rainbow-delimiters-depth-8-face ((t (:foreground "#26c6da" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
  '(rainbow-delimiters-depth-9-face ((t (:foreground "#2baf2b" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
  '(rainbow-delimiters-unmatched-face ((t (:inherit error))))
@@ -215,23 +215,23 @@
  '(hi-blue     ((t (:background "#26a69a" :foreground "#121212" :weight bold :distant-foreground "#26a69a"))))
  '(hi-black-b  ((t (:background "#8d6e63" :foreground "#121212" :weight bold :distant-foreground "#8d6e63"))))
  '(hi-blue-b   ((t (:background "#9ccc65" :foreground "#121212" :weight bold :distant-foreground "#9ccc65"))))
- '(hi-red-b    ((t (:background "#ab47bc" :foreground "#121212" :weight bold :distant-foreground "#ab47bc"))))
+ '(hi-red-b    ((t (:background "#ba68c8" :foreground "#121212" :weight bold :distant-foreground "#ba68c8"))))
  '(hi-green-b  ((t (:background "#26c6da" :foreground "#121212" :weight bold :distant-foreground "#26c6da"))))
  '(hi-black-hb ((t (:background "#2baf2b" :foreground "#121212" :weight bold :distant-foreground "#2baf2b"))))
 
  ;; Whitespace Mode
- '(whitespace-empty            ((t (:foreground "#757575" :background "#1f1f1f"))))
- '(whitespace-hspace           ((t (:foreground "#757575" :background "#1f1f1f"))))
- '(whitespace-indentation      ((t (:foreground "#757575" :background "#1f1f1f"))))
+ '(whitespace-empty            ((t (:foreground "#757575" :background "#212121"))))
+ '(whitespace-hspace           ((t (:foreground "#757575" :background "#212121"))))
+ '(whitespace-indentation      ((t (:foreground "#757575" :background "#212121"))))
  '(whitespace-line             ((t (:foreground nil                               :background nil
                                                 :underline (:color "#757575" :style wave)))))
  '(whitespace-newline          ((t (:foreground nil                               :background nil))))
- '(whitespace-space            ((t (:foreground nil                               :background "#1f1f1f"))))
- '(whitespace-space-after-tab  ((t (:foreground "#757575" :background "#1f1f1f"))))
- '(whitespace-space-before-tab ((t (:foreground "#757575" :background "#1f1f1f"))))
- '(whitespace-tab              ((t (:foreground "#757575" :background "#1f1f1f"))))
- '(whitespace-trailing         ((t (:foreground "#757575" :background "#1f1f1f"))))
- '(trailing-whitespace         ((t (:foreground "#757575" :background "#1f1f1f"))))
+ '(whitespace-space            ((t (:foreground nil                               :background "#212121"))))
+ '(whitespace-space-after-tab  ((t (:foreground "#757575" :background "#212121"))))
+ '(whitespace-space-before-tab ((t (:foreground "#757575" :background "#212121"))))
+ '(whitespace-tab              ((t (:foreground "#757575" :background "#212121"))))
+ '(whitespace-trailing         ((t (:foreground "#757575" :background "#212121"))))
+ '(trailing-whitespace         ((t (:foreground "#757575" :background "#212121"))))
 
  ;;Undo-tree
  '(undo-tree-visualizer-active-branch-face ((t (:inherit default))))
@@ -269,7 +269,7 @@
  '(diff-hl-change  ((t (:foreground "#ffcc80"     :background "#994300"))))
 
  ;;Magit
- '(magit-section-title             ((t (:foreground "#7986cb"        :background "#292929" :weight bold))))
+ '(magit-section-title             ((t (:foreground "#7986cb"        :background "#263238" :weight bold))))
  '(magit-tag                       ((t (:foreground "#9ccc65"             :background nil))))
  '(magit-branch                    ((t (:foreground "#26a69a"          :background nil))))
  '(magit-log-sha1                  ((t (:foreground "#ec407a"             :background nil))))
@@ -280,10 +280,10 @@
  '(magit-diff-none                 ((t (:foreground "#969696"))))
  '(magit-diff-file-header          ((t (:foreground "#d4e157"    :bold t))))
  '(magit-diff-hunk-header          ((t (:foreground "#d4e157"))))
- '(magit-whitespace-warning-face   ((t (:foreground "#757575" :background "#1f1f1f"))))
+ '(magit-whitespace-warning-face   ((t (:foreground "#757575" :background "#212121"))))
 
  ;; Dired
- '(dired-header      ((t (:foreground "#7986cb"    :background "#292929" :bold t))))
+ '(dired-header      ((t (:foreground "#7986cb"    :background "#263238" :bold t))))
  '(dired-directory   ((t (:foreground "#ffffff" :background "#121212" :bold t))))
  '(dired-symlink     ((t (:foreground "#9ccc65"      :background "#121212"))))
  '(dired-perm-write  ((t (:foreground "#ff2d6f"     :background "#121212" :bold t))))
