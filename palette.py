@@ -18,15 +18,15 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 selected_palette = {
-    # Standard backgrounds
+    # Background
     "bg-dark":            "#121212",
-    "bg-normal":          "#1f1f1f",   # Material has #191919 but that's too dark
+    "bg-normal":          "#202020",
     "bg-light":           "#292929",
-    # Standard texts
-    "text-light":         "#ffffff",
-    "text-normal":        "#dadada",
-    "text-dark":          "#969696",
-    # Primary colors
+    # Foreground
+    "fg-light":           "#ffffff",
+    "fg-normal":          "#dadada",
+    "fg-dark":            "#969696",
+    # Primary and accent colors
     "primary-light":      "indigo-300",
     "primary-normal":     "indigo-500",
     "primary-dark":       "indigo-700",
@@ -102,13 +102,13 @@ selected_palette = {
 colors = {
     # Views
     "view-bg":                    "bg-dark",        # convenient for long use
-    "view-tx":                    "text-normal",
-    "view-selected-bg":           "primary-dark",
-    "view-selected-tx":           "text-normal",    # keep standard text color if possible
-    "view-selected-inactive-bg":  "secondary-dark",
-    "view-selected-inactive-tx":  "text-normal",
+    "view-tx":                    "fg-normal",
     "view-header-bg":             "bg-light",
     "view-header-tx":             "primary-light",
+    "view-selected-bg":           "primary-dark",
+    "view-selected-tx":           "fg-normal",    # keep standard text color if possible
+    "view-selected-inactive-bg":  "secondary-dark",
+    "view-selected-inactive-tx":  "fg-normal",
     "view-marked-bg":             "bg-dark",
     "view-marked-tx":             "accent2-normal",
     "view-marked-inactive-bg":    "bg-dark",
@@ -119,44 +119,44 @@ colors = {
     "view-highlighted-inactive-tx": "bg-dark",
     # Windows
     "window-bg":                  "bg-normal",
-    "window-tx":                  "text-normal",
+    "window-tx":                  "fg-normal",
     "window-title-active-bg":     "primary-normal",
-    "window-title-active-tx":     "text-light",
+    "window-title-active-tx":     "fg-light",
     "window-title-inactive-bg":   "bg-normal",
-    "window-title-inactive-tx":   "text-dark",
+    "window-title-inactive-tx":   "fg-dark",
     "window-title-urgent-bg":     "accent-dark",
-    "window-title-urgent-tx":     "text-light",
+    "window-title-urgent-tx":     "fg-light",
     "window-button-active-bg":    "primary-dark",
-    "window-button-active-tx":    "text-light",
+    "window-button-active-tx":    "fg-light",
     "window-button-inactive-bg":  "bg-normal",
-    "window-button-inactive-tx":  "text-dark",
+    "window-button-inactive-tx":  "fg-dark",
     "window-button-urgent-bg":    "accent-normal",
-    "window-button-urgent-tx":    "text-light",
+    "window-button-urgent-tx":    "fg-light",
     # Panels
     "panel-bg":                   "bg-normal",
-    "panel-tx":                   "text-normal",
+    "panel-tx":                   "fg-normal",
     "panel-button-active-bg":     "primary-normal",
-    "panel-button-active-tx":     "text-light",
+    "panel-button-active-tx":     "fg-light",
     "panel-button-inactive-bg":   "bg-normal",
-    "panel-button-inactive-tx":   "text-dark",
+    "panel-button-inactive-tx":   "fg-dark",
     "panel-button-urgent-bg":     "accent-normal",
-    "panel-button-urgent-tx":     "text-light",
+    "panel-button-urgent-tx":     "fg-light",
     # Menu
     "menu-bg":                    "bg-light",
-    "menu-tx":                    "text-normal",
-    "menu-inactive-tx":           "text-dark",
+    "menu-tx":                    "fg-normal",
+    "menu-inactive-tx":           "fg-dark",
     "menu-selected-bg":           "primary-dark",
-    "menu-selected-tx":           "text-normal",
+    "menu-selected-tx":           "fg-normal",
     # Tooltips
-    "tooltip-bg":                 "text-normal",
+    "tooltip-bg":                 "fg-normal",
     "tooltip-tx":                 "bg-normal",
     # Scrollbars
     "scrollbar-bg":               "bg-normal",
     "scrollbar-fg":               "primary-dark",
     # Basic file types
     "file-broken-tx":             "accent-normal",
-    "file-directory-tx":          "text-light",
-    "file-normal-tx":             "text-normal",
+    "file-directory-tx":          "fg-light",
+    "file-normal-tx":             "fg-normal",
     "file-link-tx":               "semantic4",
     "file-remote-tx":             "semantic4",  # Same as link
     "file-device-tx":             "semantic8",
@@ -212,6 +212,6 @@ colors = {
     "diff-delete-bg":             "error-dark",
     "diff-change-tx":             "warning-light",
     "diff-change-bg":             "warning-dark",
-    "diff-context-tx":            "text-dark",
+    "diff-context-tx":            "fg-dark",
     "diff-context-bg":            "bg-dark"
 }

@@ -24,7 +24,7 @@
  '(highlight            ((t (:foreground "[material:view-highlighted-tx]" :background "[material:view-highlighted-bg]"))))
  '(link                 ((t (:foreground "[material:text-link-tx]"))))
  '(button               ((t (:inherit link))))
- '(linum                ((t (:foreground "[material:text-dark]" :background nil))))
+ '(linum                ((t (:foreground "[material:fg-dark]" :background nil))))
 
  ;; Errors and warnings
  '(error                ((t (:foreground "[material:error-tx]"))))
