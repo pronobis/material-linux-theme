@@ -39,7 +39,7 @@
    `(sml/prefix     ((t :foreground "[material:semantic4]"        )))
    `(sml/projectile ((t :foreground "[material:semantic4]"        )))
    `(sml/filename   ((t :foreground "[material:accent2-normal]"   )))
-   `(sml/sudo       ((t (:foreground "[material:window-title-inactive-bg]" :background "[material:accent-normal]"))))
+   `(sml/sudo       ((t (:foreground "[material:window-title-inactive-bg]" :background "[material:accent1-normal]"))))
    `(sml/folder     ((t :foreground "[material:file-directory-tx]")))
 
    ;; 3) - Empty filling combined with some info.
@@ -62,7 +62,7 @@
 
    ;; 6) Additional info
    ;; Use fringe/like sml/global as default face
-   `(sml/discharging         ((t :inherit sml/global :foreground "[material:accent-normal]")))
+   `(sml/discharging         ((t :inherit sml/global :foreground "[material:accent1-normal]")))
    `(sml/time                ((t :inherit sml/global)))
 
    )

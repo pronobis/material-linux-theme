@@ -57,7 +57,7 @@
  '(isearch         ((t (:foreground "[material:view-highlighted-tx]" :background "[material:view-highlighted-bg]" :bold t))))
  '(lazy-highlight  ((t (:foreground "[material:view-highlighted-inactive-tx]" :background "[material:view-highlighted-inactive-bg]" :bold t))))
  '(isearch-fail    ((t (:foreground "[material:view-tx]" :background "[material:error-dark]"))))
- '(anzu-mode-line  ((t (:foreground "[material:accent-normal]" :background "[material:window-bg]"))))
+ '(anzu-mode-line  ((t (:foreground "[material:accent1-normal]" :background "[material:window-bg]"))))
 
  ;; Standard font lock
  '(font-lock-builtin-face           ((t (:foreground "[material:source-builtin-tx]"))))
@@ -147,13 +147,13 @@
  '(helm-ff-executable        ((t (:foreground "[material:file-executable-tx]"))))
  '(helm-ff-file              ((t (:foreground "[material:file-normal-tx]"))))
  '(helm-ff-invalid-symlink   ((t (:foreground "[material:file-broken-tx]"))))
- '(helm-ff-prefix            ((t (:foreground "[material:accent-normal]"))))
+ '(helm-ff-prefix            ((t (:foreground "[material:accent1-normal]"))))
  '(helm-ff-symlink           ((t (:foreground "[material:file-link-tx]"))))
  '(helm-ff-dotted-directory  ((t (:foreground "[material:semantic8]" :bold t))))
  '(helm-history-deleted      ((t (:inherit helm-ff-invalid-symlink))))
  '(helm-history-remote       ((t (:foreground "[material:file-remote-tx]"))))
  '(helm-header               ((t (:foreground "[material:window-title-active-tx]" :background "[material:window-title-active-bg]"))))
- '(helm-match                ((t (:foreground "[material:accent-normal]" :background "[material:view-bg]"))))
+ '(helm-match                ((t (:foreground "[material:accent1-normal]" :background "[material:view-bg]"))))
  '(helm-selection            ((t (:foreground "[material:view-selected-tx]" :background "[material:view-selected-bg]" :bold t))))
  '(helm-selection-line       ((t (:foreground "[material:view-selected-tx]" :background "[material:view-selected-bg]"))))
  '(helm-source-header        ((t (:foreground "[material:view-header-tx]" :background "[material:view-header-bg]" :bold t))))
@@ -164,16 +164,16 @@
  '(helm-buffer-process       ((t (:foreground "[material:file-executable-tx]"))))
  '(helm-buffer-saved-out     ((t (:inherit error))))
  '(helm-buffer-size          ((t (:inherit font-lock-comment-face))))
- '(helm-separator            ((t (:foreground "[material:accent-normal]"))))
+ '(helm-separator            ((t (:foreground "[material:accent1-normal]"))))
  '(helm-action               ((t (:foreground "[material:text-link-tx]" :underline nil))))
 
  ;; Company Mode
- '(company-preview-common            ((t (:foreground "[material:accent-normal]"                                             ))))
+ '(company-preview-common            ((t (:foreground "[material:accent1-normal]"                                             ))))
  '(company-scrollbar-bg              ((t (:foreground nil                           :background "[material:scrollbar-bg]"    ))))
  '(company-scrollbar-fg              ((t (:foreground nil                           :background "[material:scrollbar-fg]"    ))))
  '(company-tooltip                   ((t (:foreground "[material:menu-tx]"          :background "[material:menu-bg]"          :bold t))))
- '(company-tooltip-common            ((t (:foreground "[material:accent-normal]"    :background "[material:menu-bg]"          :bold t))))
- '(company-tooltip-common-selection  ((t (:foreground "[material:accent-normal]"    :background "[material:menu-selected-bg]" :bold t))))
+ '(company-tooltip-common            ((t (:foreground "[material:accent1-normal]"    :background "[material:menu-bg]"          :bold t))))
+ '(company-tooltip-common-selection  ((t (:foreground "[material:accent1-normal]"    :background "[material:menu-selected-bg]" :bold t))))
  '(company-tooltip-mouse             ((t (:foreground "[material:menu-selected-tx]" :background "[material:menu-selected-bg]" :bold t))))
  '(company-tooltip-selection         ((t (:foreground "[material:menu-selected-tx]" :background "[material:menu-selected-bg]" :bold t))))
  '(company-tooltip-search            ((t (:foreground "[material:view-highlighted-tx]" :background "[material:view-highlighted-bg]" :bold t))))
@@ -286,7 +286,7 @@
  '(dired-header      ((t (:foreground "[material:view-header-tx]"    :background "[material:view-header-bg]" :bold t))))
  '(dired-directory   ((t (:foreground "[material:file-directory-tx]" :background "[material:view-bg]" :bold t))))
  '(dired-symlink     ((t (:foreground "[material:file-link-tx]"      :background "[material:view-bg]"))))
- '(dired-perm-write  ((t (:foreground "[material:accent-normal]"     :background "[material:view-bg]" :bold t))))
+ '(dired-perm-write  ((t (:foreground "[material:accent1-normal]"     :background "[material:view-bg]" :bold t))))
 
 
 
