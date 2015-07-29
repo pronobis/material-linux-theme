@@ -45,5 +45,11 @@ The palette consists of the following entries:
 - `secondary` - secondary UI element color
 - `accent1` - first accent color
 - `accent2` - second accent color
+- `success`, `warning`, `error` - colors associated with states
 - `semantic1` - `semantic11` - colors used to indicate various semantics, e.g. for syntax highlighting or file type indication in file managers
 - ANSI colors, e.g. `red`, `light-red`, `dark-red` - colors assigned to ANSI color names for all use-cases requiring a specific color (e.g. in a terminal)
+
+Most colors in the palette can have 3 variants:
+- `normal` - nominal color
+- `weak` - providing lower contrast on the background (e.g. darker variant in dark theme and lighter variant in light theme)
+- `strong` - providing higher contrast on the background (e.g. lighter variant in dark theme and darker variant in light theme)
