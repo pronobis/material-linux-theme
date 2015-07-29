@@ -108,7 +108,7 @@ def main():
     for theme_info in theme_infos:
         print("Processing theme '%s'... " % theme_info[0])
         generate_theme(theme_info[0], theme_info[1], theme_info[2])
-        print("Done!")
+        print("Done!\n")
 
 if __name__ == '__main__':
     main()
