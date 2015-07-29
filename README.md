@@ -16,6 +16,29 @@ Themes for the following apps are available at this point:
 * Midnight Commander
 
 
+Installation
+------------
+
+The themes in this repository are already generated and can be found in the `out` folder.
+If you wish to re-generate them after making some changes, just run `generate-themes`. It
+is not a necessary step to use the themes though.
+
+To start using a theme, you can manually copy/edit the generated theme config files of the
+relevant applications. Those theme files can be found in the `out/<theme_name>` folder.
+
+However, for convenience, you can just run the `install.sh` script which will patch the
+appropriate config files for you. The script will add/edit:
+* Midnight Commander config files `.mc/ini` and `.mc/skins/material.ini` or
+  `.config/mc/ini` and `.config/mc/skins/material.ini` dependinc on the version of MC you
+  are using.
+* i3 Window Manager config file `.i3/config`
+
+It will not automatically install the Emacs theme, since the way the theme is used depends
+on your personal Emacs configuration. It will however print ELisp commands that you should
+add to your personal Emacs initialization files.
+
+
+
 Design
 ------
 

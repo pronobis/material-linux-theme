@@ -196,6 +196,18 @@ install_i3()
 
 
 # ------------------------------------------------------------------------------
+# Install Emacs theme
+# ------------------------------------------------------------------------------
+install_emacs()
+{
+    echo "To install the Emacs theme, add the following lines to your Emacs initialization files:"
+    echo "  (add-to-list 'custom-theme-load-path \"$THEME_DIR/emacs\")"
+    echo "  (load-theme 'material t)"
+    echo "  (setq sml/theme 'material)"
+}
+
+
+# ------------------------------------------------------------------------------
 # Main
 # ------------------------------------------------------------------------------
 # Parse args
@@ -212,3 +224,4 @@ THEME_DIR=$( cd "${0%/*}/out/$theme_name" && pwd )
 # Install
 install_mc
 install_i3
+install_emacs
