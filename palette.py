@@ -26,7 +26,7 @@ selected_palette = {
     "fg-strong":          "#ffffff",
     "fg-normal":          "#dadada",
     "fg-weak":            "#969696",
-    # Primary and accent colors
+    # Primary, secondary and accent colors
     "primary-strong":     "indigo-300",
     "primary-normal":     "indigo-500",
     "primary-weak":       "indigo-700",
@@ -39,7 +39,7 @@ selected_palette = {
     "accent2-strong":     "amber-A100",
     "accent2-normal":     "amber-A400",
     "accent2-weak":       "amber-A700",
-    # Selected semantic colors
+    # Semantic colors
     "semantic1":          "teal-400",
     "semantic2":          "brown-400",
     "semantic3":          "lime-400",
@@ -51,7 +51,7 @@ selected_palette = {
     "semantic9":          "green-400",
     "semantic10":         "pink-400",
     "semantic11":         "cyan-400",
-    # Success/error/warning colors
+    # State colors
     "success-strong":     "green-200",
     "success-normal":     "green-400",
     "success-weak":       "#144517",
@@ -61,7 +61,7 @@ selected_palette = {
     "error-strong":       "red-200",
     "error-normal":       "red-400",
     "error-weak":         "#851414",
-    # Selected colors by ansi names
+    # ANSI colors
     "black":              "#121212",
     "red":                "red-400",
     "green":              "green-400",
@@ -90,7 +90,7 @@ selected_palette = {
 
 
 colors =
-# Views
+    # Views
     "view-bg":                    "bg-normal",        # convenient for long use
     "view-fg":                    "fg-normal",
     "view-header-bg":             "secondary-weak",
