@@ -58,7 +58,8 @@ raw_colors --> color_names --> palette --> common_theme --> [app_theme]+
 * `palette` - Selects a subset of colors used in the theme
 * `common_theme` - Assigns palette colors to common use-cases, provides unified look
   across all the applications
-* `app_theme` - Multiple application specific themes that assigns colors to application-specific UI elements
+* `app_theme` - Multiple application specific themes that assigns colors to
+  application-specific UI elements
 
 
 ### Palette ###
@@ -71,10 +72,14 @@ The palette consists of the following entries:
 - `accent1` - first accent color
 - `accent2` - second accent color
 - `success`, `warning`, `error` - colors associated with states
-- `semantic1` - `semantic11` - colors used to indicate various semantics, e.g. for syntax highlighting or file type indication in file managers
-- ANSI colors, e.g. `red`, `light-red`, `dark-red` - colors assigned to ANSI color names for all use-cases requiring a specific color (e.g. in a terminal)
+- `semantic1` - `semantic11` - colors used to indicate various semantics, e.g. for syntax
+  highlighting or file type indication in file managers
+- ANSI colors, e.g. `red`, `light-red`, `dark-red` - colors assigned to ANSI color names
+  for all use-cases requiring a specific color (e.g. in a terminal)
 
 Most colors in the palette can have 3 variants:
 - `normal` - nominal color
-- `weak` - providing lower contrast on the background (e.g. darker variant in dark theme and lighter variant in light theme)
-- `strong` - providing higher contrast on the background (e.g. lighter variant in dark theme and darker variant in light theme)
+- `weak` - providing lower contrast on the background (e.g. darker variant in dark theme
+  and lighter variant in light theme)
+- `strong` - providing higher contrast on the background (e.g. lighter variant in dark
+  theme and darker variant in light theme)
