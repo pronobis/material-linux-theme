@@ -46,7 +46,7 @@ palette = {
     "semantic4":          "light-green-400",
     "semantic5":          "grey-600",
     "semantic6":          "grey-800",
-    "semantic7":          "purple-300",  # 400 is simply too dark
+    "semantic7":          "purple-300",  # 400 is too dark
     "semantic8":          "blue-400",
     "semantic9":          "green-400",
     "semantic10":         "pink-400",
@@ -91,12 +91,12 @@ palette = {
 
 theme = {
     # Views
-    "view-bg":                    "bg-normal",        # convenient for long use
+    "view-bg":                    "bg-normal",
     "view-fg":                    "fg-normal",
     "view-header-bg":             "secondary-weak",
-    "view-header-fg":             "primary-strong",
+    "view-header-fg":             "primary-strong",  # TODO
     "view-selected-bg":           "primary-weak",
-    "view-selected-fg":           "fg-normal",    # keep standard text color if possible
+    "view-selected-fg":           "fg-normal",
     "view-selected-inactive-bg":  "secondary-weak",
     "view-selected-inactive-fg":  "fg-normal",
     "view-marked-bg":             "bg-normal",
@@ -123,17 +123,18 @@ theme = {
     "window-button-urgent-bg":    "accent1-normal",
     "window-button-urgent-fg":    "fg-strong",
     # Panels
-    "panel-bg":                   "bg-strong",
+    "panel-bg":                   "bg-weak",
     "panel-fg":                   "fg-normal",
     "panel-button-active-bg":     "primary-normal",
     "panel-button-active-fg":     "fg-strong",
-    "panel-button-inactive-bg":   "bg-strong",
+    "panel-button-inactive-bg":   "bg-weak",
     "panel-button-inactive-fg":   "fg-weak",
     "panel-button-urgent-bg":     "accent1-normal",
     "panel-button-urgent-fg":     "fg-strong",
     # Menu
     "menu-bg":                    "secondary-weak",
     "menu-fg":                    "fg-normal",
+    "menu-inactive-bg":           "secondary-weak",
     "menu-inactive-fg":           "fg-weak",
     "menu-selected-bg":           "primary-weak",
     "menu-selected-fg":           "fg-normal",
@@ -144,7 +145,7 @@ theme = {
     "scrollbar-bg":               "bg-strong",
     "scrollbar-fg":               "primary-weak",
     # Basic file types
-    "file-broken-fg":             "accent1-normal",
+    "file-broken-fg":             "error-normal",
     "file-directory-fg":          "fg-strong",
     "file-normal-fg":             "fg-normal",
     "file-link-fg":               "semantic4",
@@ -171,7 +172,7 @@ theme = {
     "source-preprocessor-fg":     "semantic7",
     "source-type-fg":             "semantic10",
     "source-constant-fg":         "semantic9",
-    "source-warning-fg":          "accent2-normal",  # DEPRECATED, USE WARNING
+    "source-warning-fg":          "warning-normal",
     "source-whitespace-bg":       "bg-strong",
     "source-whitespace-fg":       "semantic5",
     # Text
@@ -192,7 +193,7 @@ theme = {
     "vc-sha-fg":                  "semantic10",
     # Cursor
     "cursor-normal-bg":           "accent2-normal",
-    "cursor-read-only-bg":        "semantic9",
+    "cursor-read-only-bg":        "green",
     "cursor-overwrite-bg":        "accent1-normal",
     "cursor-special-bg":          "semantic8",
     # Notification types
