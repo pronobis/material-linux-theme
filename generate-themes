@@ -24,7 +24,8 @@ import sys
 import re
 from x256 import x256
 from material_colors import material_colors
-from theme import palette, theme
+from theme import theme
+from palette import palette
 
 
 def main():
