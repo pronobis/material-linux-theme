@@ -30,9 +30,9 @@
    `(sml/client            ((t :inherit sml/global                                                                      )))
    `(sml/mule-info         ((t :inherit sml/global                                                                      )))
    `(sml/not-modified      ((t :inherit sml/global                                                                      )))
-   `(sml/modified          ((t :background "[material:file-modified-tx]" :foreground "[material:window-title-inactive-bg]" :weight bold)))
-   `(sml/outside-modified  ((t :background "[material:error-tx]"         :foreground "[material:window-title-inactive-bg]" :weight bold)))
-   '(sml/read-only         ((t :background "[material:file-readonly-tx]" :foreground "[material:window-title-inactive-bg]" :weight bold)))
+   `(sml/modified          ((t :background "[material:file-modified-fg]" :foreground "[material:window-title-inactive-bg]" :weight bold)))
+   `(sml/outside-modified  ((t :background "[material:error-fg]"         :foreground "[material:window-title-inactive-bg]" :weight bold)))
+   '(sml/read-only         ((t :background "[material:file-readonly-fg]" :foreground "[material:window-title-inactive-bg]" :weight bold)))
 
    ;; 2) - ID
    ;; Don't specify default face, use natural modeline background instead
@@ -40,19 +40,19 @@
    `(sml/projectile ((t :foreground "[material:semantic4]"        )))
    `(sml/filename   ((t :foreground "[material:accent2-normal]"   )))
    `(sml/sudo       ((t (:foreground "[material:window-title-inactive-bg]" :background "[material:accent1-normal]"))))
-   `(sml/folder     ((t :foreground "[material:file-directory-tx]")))
+   `(sml/folder     ((t :foreground "[material:file-directory-fg]")))
 
    ;; 3) - Empty filling combined with some info.
    ;; Use fringe/like sml/global as default face
    `(sml/name-filling        ((t :inherit sml/global                                        )))
    `(sml/position-percentage ((t :inherit sml/global                                        )))
    `(sml/vc                  ((t :inherit sml/global :foreground "[material:accent2-normal]")))
-   `(sml/vc-edited           ((t :inherit sml/global :foreground "[material:file-modified-tx]" )))
+   `(sml/vc-edited           ((t :inherit sml/global :foreground "[material:file-modified-fg]" )))
 
    ;; 4) - Major Mode
    ;; Don't specify default face, use natural modeline background instead
    `(sml/modes               ((t :weight bold                                                  )))
-   `(sml/process             ((t :inherit sml/modes :foreground "[material:file-executable-tx]")))
+   `(sml/process             ((t :inherit sml/modes :foreground "[material:file-executable-fg]")))
 
    ;; 5) Minor Modes.
    ;; Use fringe/like sml/global as default face

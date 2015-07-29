@@ -2,7 +2,7 @@
 # Author: Satyajit Sahoo <satyajit.happy@gmail.com>
 # License: GPL-3.0+
 
-gtk-color-scheme = "base_color:[material:view-bg]\nfg_color:[material:window-tx]\ntooltip_fg_color:[material:tooltip-tx]\nselected_bg_color:[material:view-selected-bg]\nselected_fg_color:[material:view-selected-tx]\ntext_color:[material:view-tx]\nbg_color:[material:window-bg]\ntooltip_bg_color:[material:tooltip-bg]\nlink_color:[material:text-link-tx]"
+gtk-color-scheme = "base_color:[material:view-bg]\nfg_color:[material:window-fg]\ntooltip_fg_color:[material:tooltip-fg]\nselected_bg_color:[material:view-selected-bg]\nselected_fg_color:[material:view-selected-fg]\ntext_color:[material:view-fg]\nbg_color:[material:window-bg]\ntooltip_bg_color:[material:tooltip-bg]\nlink_color:[material:text-link-fg]"
 
 style "default" {
 	xthickness = 1

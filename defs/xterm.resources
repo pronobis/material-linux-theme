@@ -1,6 +1,6 @@
 ! XTerm material color scheme
 
-xterm*foreground:      [material:view-tx]
+xterm*foreground:      [material:view-fg]
 xterm*background:      [material:view-bg]
 
 xterm*color0:          [material:dark-black]
