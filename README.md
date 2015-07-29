@@ -37,6 +37,8 @@ It will not automatically install the Emacs theme, since the way the theme is us
 on your personal Emacs configuration. It will however print ELisp commands that you should
 add to your personal Emacs initialization files.
 
+**Note! The installation script has not been extensively tested, and for what I know
+  might eat your computer. Use at your own risk, and please report any problems.**
 
 
 Design
