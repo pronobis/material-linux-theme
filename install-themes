@@ -245,29 +245,6 @@ install_emacs()
 
 
 # ------------------------------------------------------------------------------
-# Install GTK 2.0
-# ------------------------------------------------------------------------------
-install_gtk2()
-{
-    echo "Installing GTK 2.0 theme..."
-    create_copy "$THEME_DIR/gtk2/gtkrc" "$HOME/.gtkrc-2.0"
-    echo "Done!"
-}
-
-
-# ------------------------------------------------------------------------------
-# Install GTK 3.0
-# ------------------------------------------------------------------------------
-install_gtk3()
-{
-    echo "Installing GTK 3.0 theme..."
-    mkdir -p "$HOME/.config/gtk-3.0"
-    create_copy "$THEME_DIR/gtk3/gtk.css" "$HOME/.config/gtk-3.0/gtk.css"
-    echo "Done!"
-}
-
-
-# ------------------------------------------------------------------------------
 # Install KDE 5.0
 # ------------------------------------------------------------------------------
 install_kde5()
@@ -293,6 +270,55 @@ install_kde5()
     echo "To finish installation of the KDE theme, you need to select the"
     echo "Material color scheme and Material Breeze desktop theme in your"
     echo "KDE system settings."
+}
+
+
+# ------------------------------------------------------------------------------
+# Install GTK
+# ------------------------------------------------------------------------------
+install_gtk()
+{
+    echo "Installing GTK theme..."
+
+    # Copy the theme
+    echo "-> Copying the theme files"
+    rm -rf "$HOME/.local/share/themes/Material-Orion"
+    mkdir -p "$HOME/.local/share/themes/Material-Orion"
+    cp -r $THEME_DIR/gtk_orion/* "$HOME/.local/share/themes/Material-Orion/"
+
+    echo "-> Updating GTK 2.0 configuration"
+    if [ -e "$HOME/.gtkrc-2.0" ]
+    then
+        # Include
+        if grep -q "include[ \t]*\".*themes.*\"" "$HOME/.gtkrc-2.0"
+        then  # Entry found, replace
+            # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
+            tmp=$(sed "/include[ \t]*\".*themes.*\"/c\\include \"$HOME/.local/share/themes/Material-Orion/gtk-2.0/gtkrc\"" "$HOME/.gtkrc-2.0"); printf "%s\n" "$tmp" > "$HOME/.gtkrc-2.0"
+        else  # Entry not found, prepend entry to the file
+            # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
+            tmp=$(sed "1s:^:include \"$HOME/.local/share/themes/Material-Orion/gtk-2.0/gtkrc\"\n:" "$HOME/.gtkrc-2.0"); printf "%s\n" "$tmp" > "$HOME/.gtkrc-2.0"
+        fi
+        # Theme setting
+        if grep -q "gtk-theme-name" "$HOME/.gtkrc-2.0"
+        then  # Entry found, replace
+            # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
+            tmp=$(sed "/gtk-theme-name/c\\gtk-theme-name=\"Material-Orion\"" "$HOME/.gtkrc-2.0"); printf "%s\n" "$tmp" > "$HOME/.gtkrc-2.0"
+        else  # Entry not found, prepend entry to the file
+            # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
+            echo "gtk-theme-name=\"Material-Orion\"" >> "$HOME/.gtkrc-2.0"
+        fi
+    else
+        # Config file does not exist, create and add theme entry
+        cat <<EOT > "$HOME/.gtkrc-2.0"
+include "$HOME/.local/share/themes/Material-Orion/gtk-2.0/gtkrc"
+gtk-theme-name="Material-Orion"
+EOT
+    fi
+
+    echo "-> Updating GTK 3.0 configuration"
+
+
+    echo "Done!"
 }
 
 
@@ -337,9 +363,7 @@ THEME_DIR=$( cd "${0%/*}/out/$theme_name" && pwd )
 # Install
 install_kde5
 echo
-install_gtk2
-echo
-install_gtk3
+install_gtk
 echo
 install_xterm
 echo

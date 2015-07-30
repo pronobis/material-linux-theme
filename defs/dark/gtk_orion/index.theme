@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Material Orion
+Name=Material-Orion
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=MaterialOrion
+GtkTheme=Material-Orion
 CursorTheme=DMZ-Black
 ButtonLayout=:minimize,maximize,close
