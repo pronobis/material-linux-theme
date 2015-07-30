@@ -202,7 +202,7 @@ install_i3()
             fi
             # Add the colors section to existing bar section
             # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-            tmp=$(sed "/^[ \t]*bar[ \t]*{/a\\$i" "$HOME/.i3/config"); printf "%s\n" "$tmp" > "$HOME/.i3/config"
+            tmp=$(awk "/^[ \t]*bar[ \t]*{[ \t]*$/{print \$0 \"\\n$i\"; next}{print}" "$HOME/.i3/config"); printf "%s\n" "$tmp" > "$HOME/.i3/config"
         fi
     else
         # No config file, we use the theme as a stub
