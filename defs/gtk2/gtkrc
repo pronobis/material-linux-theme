@@ -88,7 +88,7 @@ style "default" {
 	text[NORMAL] = @text_color
 	text[PRELIGHT] = @text_color
 	text[SELECTED] = @selected_fg_color
-	text[INSENSITIVE] = shade (0.8, @bg_color)
+	text[INSENSITIVE] = "[material:window-inactive]"
 	text[ACTIVE] = darker (@text_color)
 
 	base[NORMAL] = @base_color
