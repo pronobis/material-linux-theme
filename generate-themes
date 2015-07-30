@@ -22,7 +22,9 @@
 import os
 import sys
 import re
+import shutil
 from x256 import x256
+
 from material_colors import material_colors
 from theme import theme as theme_common
 from palette_dark import palette as palette_dark
@@ -30,6 +32,9 @@ from palette_dark import palette as palette_dark
 
 # Definition of color themes
 theme_infos = [['dark', palette_dark, theme_common]]
+
+# Extensions for which we should just copy without parsing
+asset_exts = ['.png']
 
 
 def generate_theme(theme_name, palette, theme):
@@ -88,18 +93,26 @@ def generate_theme(theme_name, palette, theme):
             in_file_path = os.path.join(dir_name, file_name)
             out_file_dir = os.path.realpath(os.path.join(out_dir, theme_name, rel_dir))
             out_file_path = os.path.join(out_file_dir, file_name)
-            print("-> Parsing file: %s" %
-                  os.path.relpath(os.path.join(rel_dir, file_name)))
+            in_file_ext = os.path.splitext(in_file_path)
             # Make out dir
             os.makedirs(out_file_dir, exist_ok=True)
-            # Process file
-            in_file = open(in_file_path, 'r')
-            out_file = open(out_file_path, 'w')
-            for line in in_file:
-                result = pattern.sub(lambda x: tags[x.group()], line)
-                out_file.write(result)
-            out_file.close()
-            in_file.close()
+            # Parse or copy
+            if in_file_ext[1] in asset_exts:
+                # Copy
+                print("-> Copying file: %s" %
+                      os.path.relpath(os.path.join(rel_dir, file_name)))
+                shutil.copy(in_file_path, out_file_path)
+            else:
+                # Parse
+                print("-> Parsing file: %s" %
+                      os.path.relpath(os.path.join(rel_dir, file_name)))
+                in_file = open(in_file_path, 'r')
+                out_file = open(out_file_path, 'w')
+                for line in in_file:
+                    result = pattern.sub(lambda x: tags[x.group()], line)
+                    out_file.write(result)
+                out_file.close()
+                in_file.close()
 
 
 def main():
