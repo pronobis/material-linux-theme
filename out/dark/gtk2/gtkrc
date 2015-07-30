@@ -146,7 +146,7 @@ style "hscale" {
 }
 
 style "button" = "wider" {
-	bg[NORMAL] = @bg_color
+	bg[NORMAL] = "#121212"
 	bg[PRELIGHT] = shade (1.04, @bg_color)
 	bg[ACTIVE] = shade (0.9, @bg_color)
 	bg[INSENSITIVE] = @bg_color
