@@ -250,6 +250,7 @@ install_emacs()
 install_gtk2()
 {
     echo "Installing GTK 2.0 theme..."
+    create_copy "$THEME_DIR/gtk2/gtkrc" "$HOME/.gtkrc-2.0"
     echo "Done!"
 }
 
