@@ -14,7 +14,7 @@ print_usage()
 
 
 # ------------------------------------------------------------------------------
-# Create a link to config files
+# Create a safe link to a file
 # Args:
 #   $1 - Target
 #   $2 - Link name
@@ -32,6 +32,28 @@ create_link()
     fi
     ln -s "$1" "$2"
 }
+
+
+# ------------------------------------------------------------------------------
+# Create a safe copy of a file
+# Args:
+#   $1 - From
+#   $2 - To
+# ------------------------------------------------------------------------------
+create_copy()
+{
+    if [ -d "$2" ] && [ ! -L "$2" ]
+    then # Do not overwrite existing folders
+        print_error "A directory $2 already exists!"
+        exit 1
+    fi
+    if [ -e "$2" ] || [ -h "$2" ]
+    then # To prevent copying to a link
+        rm "$2"
+    fi
+    cp "$1" "$2"
+}
+
 
 
 # ------------------------------------------------------------------------------
@@ -68,9 +90,9 @@ install_mc()
         mkdir "$config_dir/skins"
     fi
 
-    # Create link to theme
-    echo "-> Creating a link to the theme file"
-    create_link "$THEME_DIR/mc/material.ini" "$config_dir/skins/material.ini"
+    # Copy the theme
+    echo "-> Copying the theme file"
+    create_copy "$THEME_DIR/mc/material.ini" "$config_dir/skins/material.ini"
 
     # Update mc configuration
     echo "-> Updating MC configuration"
