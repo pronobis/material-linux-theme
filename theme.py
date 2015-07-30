@@ -79,8 +79,8 @@ theme = {
     "menu-fg":                    "fg-normal",
     "menu-inactive-bg":           "bg-strong",
     "menu-inactive-fg":           "fg-weak",
-    "menu-selected-bg":           "primary-weak", # TODO: change to active
-    "menu-selected-fg":           "fg-normal", # TODO: change to active
+    "menu-active-bg":             "primary-normal",
+    "menu-active-fg":             "fg-strong",
 
     # Tooltips
     "tooltip-bg":                 "fg-normal",
