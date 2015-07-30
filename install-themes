@@ -260,6 +260,8 @@ install_gtk2()
 install_gtk3()
 {
     echo "Installing GTK 3.0 theme..."
+    mkdir -p "$HOME/.config/gtk-3.0"
+    create_copy "$THEME_DIR/gtk3/gtk.css" "$HOME/.config/gtk-3.0/gtk.css"
     echo "Done!"
 }
 

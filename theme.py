@@ -60,9 +60,9 @@ theme = {
     "panel-button-urgent-bg":     "accent1-normal",
     "panel-button-urgent-fg":     "fg-strong",
     # Menu
-    "menu-bg":                    "secondary-weak",
+    "menu-bg":                    "bg-strong",
     "menu-fg":                    "fg-normal",
-    "menu-inactive-bg":           "secondary-weak",
+    "menu-inactive-bg":           "bg-strong",
     "menu-inactive-fg":           "fg-weak",
     "menu-selected-bg":           "primary-weak",
     "menu-selected-fg":           "fg-normal",
