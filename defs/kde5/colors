@@ -97,9 +97,9 @@ shadeSortColumn=true
 contrast=4
 
 [WM]
-activeBackground=58,46,61
-activeBlend=198,198,198
-activeForeground=198,198,198
-inactiveBackground=28,28,28
-inactiveBlend=166,166,166
-inactiveForeground=166,166,166
+activeBackground=[material:window-title-active-bg]
+activeBlend=[material:window-title-active-bg]
+activeForeground=[material:window-title-active-fg]
+inactiveBackground=[material:window-title-inactive-bg]
+inactiveBlend=[material:window-title-inactive-bg]
+inactiveForeground=[material:window-title-inactive-fg]
