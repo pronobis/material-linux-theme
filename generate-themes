@@ -78,7 +78,7 @@ def generate_theme(theme_name, palette, theme):
 
     # Get def files
     script_dir = os.path.realpath(sys.path[0])
-    def_dir = os.path.join(script_dir, 'defs')
+    def_dir = os.path.join(script_dir, 'defs', theme_name)
     out_dir = os.path.join(script_dir, 'out')
 
     # Process each file
