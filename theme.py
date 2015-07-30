@@ -22,7 +22,7 @@ theme = {
     "view-bg":                    "bg-normal",
     "view-fg":                    "fg-normal",
     "view-header-bg":             "secondary-weak",
-    "view-header-fg":             "primary-strong",  # TODO
+    "view-header-fg":             "primary-strong",
     "view-selected-bg":           "primary-weak",
     "view-selected-fg":           "fg-normal",
     "view-selected-inactive-bg":  "secondary-weak",

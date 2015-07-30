@@ -273,12 +273,26 @@ install_gtk3()
 install_kde5()
 {
     echo "Installing KDE 5.0 theme..."
-    mkdir -p "$HOME/.local/share/color-schemes/"
-    create_copy "$THEME_DIR/kde5/Material.colors" "$HOME/.local/share/color-schemes/Material.colors"
+    echo "-> Copying theme files"
+    mkdir -p "$HOME/.local/share/color-schemes"
+    create_copy "$THEME_DIR/kde5/colors" "$HOME/.local/share/color-schemes/Material.colors"
+    mkdir -p "$HOME/.local/share/plasma/desktoptheme/material-breeze"
+    create_copy "$THEME_DIR/kde5/breeze/colors" "$HOME/.local/share/plasma/desktoptheme/material-breeze/colors"
+    create_copy "$THEME_DIR/kde5/breeze/metadata.desktop" "$HOME/.local/share/plasma/desktoptheme/material-breeze/metadata.desktop"
+    # Delete cache created by plasma
+    echo "-> Clearing Plasma 5 cache"
+    rm -f $HOME/.cache/plasma-svgelements-material-breeze*
+    rm -f $HOME/.cache/plasma_theme_material-breeze*
+    if which kwriteconfig5
+    then
+        echo "-> Updating Plasma 5 configuration"
+        kwriteconfig5 --file "plasmarc" --group "Theme" --key "name" "material-breeze"
+    fi
     echo "Done!"
     echo
     echo "To finish installation of the KDE theme, you need to select the"
-    echo "Material color scheme in your KDE system settings."
+    echo "Material color scheme and Material Breeze desktop theme in your"
+    echo "KDE system settings."
 }
 
 
