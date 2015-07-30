@@ -35,11 +35,13 @@ theme = {
     "view-highlighted-fg":        "bg-normal",
     "view-highlighted-inactive-bg": "accent2-normal",
     "view-highlighted-inactive-fg": "bg-normal",
+
     # Window content
     "window-bg":                  "bg-strong",
     "window-fg":                  "fg-normal",
     "window-active":              "primary-normal",
     "window-inactive":            "fg-weak",
+
     # Window buttons
     "window-button-bg":           "bg-normal",
     "window-button-fg":           "fg-normal",
@@ -47,6 +49,7 @@ theme = {
     "window-button-active-fg":    "fg-strong",
     "window-button-inactive-bg":  "bg-normal",
     "window-button-inactive-fg":  "fg-weak",
+
     # Window title
     "window-title-inactive-bg":   "bg-strong",
     "window-title-inactive-fg":   "fg-weak",
@@ -54,11 +57,13 @@ theme = {
     "window-title-active-fg":     "fg-strong",
     "window-title-urgent-bg":     "accent1-weak",
     "window-title-urgent-fg":     "fg-strong",
+
     # Panels
     "panel-bg":                   "bg-weak",
     "panel-fg":                   "fg-normal",
     "panel-active":               "primary-normal",
     "panel-inactive":             "fg-weak",
+
     # Panel buttons
     "panel-button-bg":            "bg-normal",
     "panel-button-fg":            "fg-normal",
@@ -68,6 +73,7 @@ theme = {
     "panel-button-inactive-fg":   "fg-weak",
     "panel-button-urgent-bg":     "accent1-normal",
     "panel-button-urgent-fg":     "fg-strong",
+
     # Menu
     "menu-bg":                    "bg-strong",
     "menu-fg":                    "fg-normal",
@@ -75,12 +81,15 @@ theme = {
     "menu-inactive-fg":           "fg-weak",
     "menu-selected-bg":           "primary-weak", # TODO: change to active
     "menu-selected-fg":           "fg-normal", # TODO: change to active
+
     # Tooltips
     "tooltip-bg":                 "fg-normal",
     "tooltip-fg":                 "bg-strong",
+
     # Scrollbars
     "scrollbar-bg":               "bg-strong",
     "scrollbar-fg":               "primary-weak",
+
     # Basic file types
     "file-broken-fg":             "error-normal",
     "file-directory-fg":          "fg-strong",
@@ -97,6 +106,7 @@ theme = {
     "file-temp-fg":               "semantic5",
     "file-readonly-fg":           "semantic9",
     "file-modified-fg":           "accent1-normal",
+
     # Basic source code elements
     "source-string-fg":           "semantic1",
     "source-doc-fg":              "semantic2",
@@ -112,6 +122,7 @@ theme = {
     "source-warning-fg":          "warning-normal",
     "source-whitespace-bg":       "bg-strong",
     "source-whitespace-fg":       "semantic5",
+
     # Text
     "text-link-fg":               "semantic8",
     "text-tag-fg":                "semantic11",
@@ -124,19 +135,23 @@ theme = {
     "text-section7-fg":           "semantic7",
     "text-section8-fg":           "semantic11",
     "text-section9-fg":           "semantic9",
+
     # Basic VC elements
     "vc-branch-fg":               "semantic1",
     "vc-tag-fg":                  "semantic4",
     "vc-sha-fg":                  "semantic10",
+
     # Cursor
     "cursor-normal-bg":           "accent2-normal",
     "cursor-read-only-bg":        "green",
     "cursor-overwrite-bg":        "accent1-normal",
     "cursor-special-bg":          "semantic8",
+
     # Notification types
     "error-fg":                   "error-normal",
     "warning-fg":                 "warning-normal",
     "success-fg":                 "success-normal",
+
     # Diff
     "diff-add-fg":                "success-strong",
     "diff-add-bg":                "success-weak",
