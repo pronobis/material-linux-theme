@@ -276,6 +276,9 @@ install_kde5()
     mkdir -p "$HOME/.local/share/color-schemes/"
     create_copy "$THEME_DIR/kde5/Material.colors" "$HOME/.local/share/color-schemes/Material.colors"
     echo "Done!"
+    echo
+    echo "To finish installation of the KDE theme, you need to select the"
+    echo "Material color scheme in your KDE system settings."
 }
 
 
