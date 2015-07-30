@@ -40,6 +40,13 @@ theme = {
     "window-fg":                  "fg-normal",
     "window-active":              "primary-normal",
     "window-inactive":            "fg-weak",
+    # Window buttons
+    "window-button-bg":           "bg-normal",
+    "window-button-fg":           "fg-normal",
+    "window-button-active-bg":    "primary-normal",
+    "window-button-active-fg":    "fg-strong",
+    "window-button-inactive-bg":  "bg-normal",
+    "window-button-inactive-fg":  "fg-weak",
     # Window title
     "window-title-inactive-bg":   "bg-strong",
     "window-title-inactive-fg":   "fg-weak",
@@ -47,13 +54,6 @@ theme = {
     "window-title-active-fg":     "fg-strong",
     "window-title-urgent-bg":     "accent1-weak",
     "window-title-urgent-fg":     "fg-strong",
-    # Buttons
-    "window-button-bg":           "bg-normal",
-    "window-button-fg":           "fg-normal",
-    "window-button-active-bg":    "primary-normal",
-    "window-button-active-fg":    "fg-strong",
-    "window-button-inactive-bg":  "bg-normal",
-    "window-button-inactive-fg":  "fg-weak",
     # Panels
     "panel-bg":                   "bg-weak",
     "panel-fg":                   "fg-normal",
