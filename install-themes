@@ -283,7 +283,7 @@ install_kde5()
     echo "-> Clearing Plasma 5 cache"
     rm -f $HOME/.cache/plasma-svgelements-material-breeze*
     rm -f $HOME/.cache/plasma_theme_material-breeze*
-    if which kwriteconfig5
+    if which kwriteconfig5 > /dev/null
     then
         echo "-> Updating Plasma 5 configuration"
         kwriteconfig5 --file "plasmarc" --group "Theme" --key "name" "material-breeze"
