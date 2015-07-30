@@ -8,11 +8,12 @@ client.urgent               #e00032 #e00032 #ffffff #e00032
 bar {
     colors {
         background #000000
+        separator  #000000
         statusline #000000
  
         focused_workspace  #3f51b5 #3f51b5 #ffffff
-        active_workspace   #000000 #000000 #969696
-        inactive_workspace #000000 #000000 #969696
+        active_workspace   #121212 #121212 #dadada
+        inactive_workspace #121212 #121212 #dadada
         urgent_workspace   #ff2d6f #ff2d6f #ffffff
     }
 }

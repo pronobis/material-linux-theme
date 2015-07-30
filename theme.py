@@ -60,12 +60,14 @@ theme = {
     "panel-active":               "primary-normal",
     "panel-inactive":             "fg-weak",
     # Panel buttons
-    "panel-button-active-bg":     "primary-normal", # TODO
-    "panel-button-active-fg":     "fg-strong", # TODO
-    "panel-button-inactive-bg":   "bg-weak", # TODO
-    "panel-button-inactive-fg":   "fg-weak", # TODO
-    "panel-button-urgent-bg":     "accent1-normal", # TODO
-    "panel-button-urgent-fg":     "fg-strong", # TODO
+    "panel-button-bg":            "bg-normal",
+    "panel-button-fg":            "fg-normal",
+    "panel-button-active-bg":     "primary-normal",
+    "panel-button-active-fg":     "fg-strong",
+    "panel-button-inactive-bg":   "bg-normal",
+    "panel-button-inactive-fg":   "fg-weak",
+    "panel-button-urgent-bg":     "accent1-normal",
+    "panel-button-urgent-fg":     "fg-strong",
     # Menu
     "menu-bg":                    "bg-strong",
     "menu-fg":                    "fg-normal",

@@ -8,11 +8,12 @@ client.urgent               [material:window-title-urgent-bg] [material:window-t
 bar {
     colors {
         background [material:panel-bg]
+        separator  [material:panel-bg]
         statusline [material:panel-bg]
  
         focused_workspace  [material:panel-button-active-bg] [material:panel-button-active-bg] [material:panel-button-active-fg]
-        active_workspace   [material:panel-button-inactive-bg] [material:panel-button-inactive-bg] [material:panel-button-inactive-fg]
-        inactive_workspace [material:panel-button-inactive-bg] [material:panel-button-inactive-bg] [material:panel-button-inactive-fg]
+        active_workspace   [material:panel-button-bg] [material:panel-button-bg] [material:panel-button-fg]
+        inactive_workspace [material:panel-button-bg] [material:panel-button-bg] [material:panel-button-fg]
         urgent_workspace   [material:panel-button-urgent-bg] [material:panel-button-urgent-bg] [material:panel-button-urgent-fg]
     }
 }
