@@ -146,11 +146,14 @@ style "hscale" {
 }
 
 style "button" = "wider" {
-	bg[NORMAL] = "[material:window-button-inactive-bg]"
-	bg[PRELIGHT] = shade (1.04, @bg_color)
-	bg[ACTIVE] = shade (0.9, @bg_color)
-	bg[INSENSITIVE] = @bg_color
-	fg[INSENSITIVE] = mix (0.4, @fg_color, @bg_color)
+	bg[NORMAL] = "[material:button-bg]"
+	fg[NORMAL] = "[material:button-fg]"
+	bg[PRELIGHT] = "[material:button-active-bg]"
+	fg[PRELIGHT] = "[material:button-active-fg]"
+	bg[ACTIVE] = "[material:button-active-bg]"
+	fg[ACTIVE] = "[material:button-active-fg]"
+	bg[INSENSITIVE] = "[material:button-inactive-bg]"
+	fg[INSENSITIVE] = "[material:button-inactive-fg]"
 
 	engine "murrine" {
 		#contrast = 1.0

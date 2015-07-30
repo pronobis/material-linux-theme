@@ -23,14 +23,14 @@ BackgroundAlternate=#121212
 BackgroundNormal=#121212
 DecorationFocus=#3f51b5
 DecorationHover=#3f51b5
-ForegroundActive=#3f51b5
+ForegroundActive=#ffffff
 ForegroundInactive=#969696
 ForegroundLink=#738ffe
 ForegroundNegative=#e84e40
 ForegroundNeutral=#ffa726
-ForegroundNormal=#ffffff
+ForegroundNormal=#dadada
 ForegroundPositive=#2baf2b
-ForegroundVisited=#ffffff
+ForegroundVisited=#dadada
 
 [Colors:Selection]
 BackgroundAlternate=#263238

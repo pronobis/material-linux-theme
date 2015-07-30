@@ -147,10 +147,13 @@ style "hscale" {
 
 style "button" = "wider" {
 	bg[NORMAL] = "#121212"
-	bg[PRELIGHT] = shade (1.04, @bg_color)
-	bg[ACTIVE] = shade (0.9, @bg_color)
-	bg[INSENSITIVE] = @bg_color
-	fg[INSENSITIVE] = mix (0.4, @fg_color, @bg_color)
+	fg[NORMAL] = "#dadada"
+	bg[PRELIGHT] = "#3f51b5"
+	fg[PRELIGHT] = "#ffffff"
+	bg[ACTIVE] = "#3f51b5"
+	fg[ACTIVE] = "#ffffff"
+	bg[INSENSITIVE] = "#121212"
+	fg[INSENSITIVE] = "#969696"
 
 	engine "murrine" {
 		#contrast = 1.0
