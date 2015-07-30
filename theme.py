@@ -38,6 +38,8 @@ theme = {
     # Windows
     "window-bg":                  "bg-strong",
     "window-fg":                  "fg-normal",
+    "window-ui-active":           "primary-normal",  # UI element such as group box
+    "window-ui-inactive":         "fg-weak",         # UI element such as group box
     "window-title-active-bg":     "primary-normal",
     "window-title-active-fg":     "fg-strong",
     "window-title-inactive-bg":   "bg-strong",
