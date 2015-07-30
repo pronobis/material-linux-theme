@@ -16,7 +16,7 @@ print_usage()
 
 
 # ------------------------------------------------------------------------------
-# Create a safe link to a file
+# Create a safe link to a file and make backup if needed.
 # Args:
 #   $1 - Target
 #   $2 - Link name
@@ -30,14 +30,14 @@ create_link()
     fi
     if [ -e "$2" ] || [ -h "$2" ]
     then # To prevent creation of a link on another link (e.g. link to folder)
-        rm "$2"
+        mv "$2" "$2.bak"
     fi
     ln -s "$1" "$2"
 }
 
 
 # ------------------------------------------------------------------------------
-# Create a safe copy of a file
+# Create a safe copy of a file and make backup if needed.
 # Args:
 #   $1 - From
 #   $2 - To
@@ -51,7 +51,7 @@ create_copy()
     fi
     if [ -e "$2" ] || [ -h "$2" ]
     then # To prevent copying to a link
-        rm "$2"
+        mv "$2" "$2.bak"
     fi
     cp "$1" "$2"
 }
@@ -101,6 +101,9 @@ install_mc()
     local tmp=""
     if [ -e "$config_dir/ini" ]
     then
+        # Make backup
+        cp "$config_dir/ini" "$config_dir/ini.bak"
+        # Update
         if grep -q "skin" "$config_dir/ini"
         then
             # Config file exists and has skin entry, replace
@@ -140,11 +143,14 @@ install_i3()
     echo "Installing i3 Window Manager theme..."
 
     # Check if configuration file exists
-    if [ -f "$HOME/.i3/config" ]
+    if [ -e "$HOME/.i3/config" ]
     then
         echo "-> Found i3 configuration in $HOME/.i3/config"
-        echo "-> Updating i3 configuration"
+        # Make backup
+        cp "$HOME/.i3/config" "$HOME/.i3/config.bak"
 
+        # Update
+        echo "-> Updating i3 configuration"
         # Replace/add each window configuration line
         local i=""
         local tmp=""
