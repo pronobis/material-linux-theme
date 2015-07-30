@@ -48,7 +48,7 @@ theme = {
     "window-title-urgent-fg":     "fg-strong",
     "window-button-active-bg":    "primary-weak",
     "window-button-active-fg":    "fg-strong",
-    "window-button-inactive-bg":  "bg-strong",
+    "window-button-inactive-bg":  "bg-normal",
     "window-button-inactive-fg":  "fg-weak",
     "window-button-urgent-bg":    "accent1-normal",
     "window-button-urgent-fg":    "fg-strong",

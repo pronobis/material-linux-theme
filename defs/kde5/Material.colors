@@ -19,18 +19,18 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=18,18,18
-BackgroundNormal=18,18,18
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
+BackgroundAlternate=[material:window-button-inactive-bg]
+BackgroundNormal=[material:window-button-inactive-bg]
+DecorationFocus=[material:window-ui-active]
+DecorationHover=[material:window-ui-active]
+ForegroundActive=[material:window-ui-active]
+ForegroundInactive=[material:window-ui-inactive]
 ForegroundLink=[material:text-link-fg]
 ForegroundNegative=[material:error-fg]
 ForegroundNeutral=[material:warning-fg]
 ForegroundNormal=[material:window-button-active-fg]
 ForegroundPositive=[material:success-fg]
-ForegroundVisited=127,140,141
+ForegroundVisited=[material:window-button-active-fg]
 
 [Colors:Selection]
 BackgroundAlternate=[material:view-selected-inactive-bg]

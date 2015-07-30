@@ -19,18 +19,18 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=18,18,18
-BackgroundNormal=18,18,18
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
+BackgroundAlternate=#121212
+BackgroundNormal=#121212
+DecorationFocus=#3f51b5
+DecorationHover=#3f51b5
+ForegroundActive=#3f51b5
+ForegroundInactive=#969696
 ForegroundLink=#738ffe
 ForegroundNegative=#e84e40
 ForegroundNeutral=#ffa726
 ForegroundNormal=#ffffff
 ForegroundPositive=#2baf2b
-ForegroundVisited=127,140,141
+ForegroundVisited=#ffffff
 
 [Colors:Selection]
 BackgroundAlternate=#263238
