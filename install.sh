@@ -23,7 +23,7 @@ create_link()
 {
     if [ -d "$2" ] && [ ! -L "$2" ]
     then # Do not overwrite existing folders
-        print_error "A directory $2 already exists!"
+        echo "ERROR: A directory $2 already exists!"
         exit 1
     fi
     if [ -e "$2" ] || [ -h "$2" ]
@@ -44,7 +44,7 @@ create_copy()
 {
     if [ -d "$2" ] && [ ! -L "$2" ]
     then # Do not overwrite existing folders
-        print_error "A directory $2 already exists!"
+        echo "ERROR: A directory $2 already exists!"
         exit 1
     fi
     if [ -e "$2" ] || [ -h "$2" ]
@@ -222,8 +222,15 @@ install_i3()
 # ------------------------------------------------------------------------------
 install_emacs()
 {
-    echo "To install the Emacs theme, add the following lines to your Emacs initialization files:"
-    echo "  (add-to-list 'custom-theme-load-path \"$THEME_DIR/emacs\")"
+    echo "Installing Emacs theme..."
+    mkdir -p "$HOME/.emacs.d/themes"
+    create_copy "$THEME_DIR/emacs/material-theme.el" "$HOME/.emacs.d/themes/material-theme.el"
+    create_copy "$THEME_DIR/emacs/smart-mode-line-material-theme.el" "$HOME/.emacs.d/themes/smart-mode-line-material-theme.el"
+    echo "Done!"
+    echo
+    echo "To finish installation of the Emacs theme, add the following lines to"
+    echo "your Emacs initialization files:"
+    echo "  (add-to-list 'custom-theme-load-path \"$HOME/.emacs.d/themes\")"
     echo "  (load-theme 'material t)"
     echo "  (setq sml/theme 'material)"
 }
@@ -245,5 +252,7 @@ THEME_DIR=$( cd "${0%/*}/out/$theme_name" && pwd )
 
 # Install
 install_mc
+echo
 install_i3
+echo
 install_emacs
