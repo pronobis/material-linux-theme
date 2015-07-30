@@ -38,8 +38,8 @@ theme = {
     # Window content
     "window-bg":                  "bg-strong",
     "window-fg":                  "fg-normal",
-    "window-active":              "primary-normal",  # UI element such as group box or special text
-    "window-inactive":            "fg-weak",         # UI element such as group box or special text
+    "window-active":              "primary-normal",
+    "window-inactive":            "fg-weak",
     # Window title
     "window-title-inactive-bg":   "bg-strong",
     "window-title-inactive-fg":   "fg-weak",
@@ -48,15 +48,18 @@ theme = {
     "window-title-urgent-bg":     "accent1-weak",
     "window-title-urgent-fg":     "fg-strong",
     # Buttons
-    "button-bg":                  "bg-normal",
-    "button-fg":                  "fg-normal",
-    "button-active-bg":           "primary-normal",
-    "button-active-fg":           "fg-strong",
-    "button-inactive-bg":         "bg-normal",
-    "button-inactive-fg":         "fg-weak",
+    "window-button-bg":           "bg-normal",
+    "window-button-fg":           "fg-normal",
+    "window-button-active-bg":    "primary-normal",
+    "window-button-active-fg":    "fg-strong",
+    "window-button-inactive-bg":  "bg-normal",
+    "window-button-inactive-fg":  "fg-weak",
     # Panels
-    "panel-bg":                   "bg-weak", # TODO
-    "panel-fg":                   "fg-normal", # TODO
+    "panel-bg":                   "bg-weak",
+    "panel-fg":                   "fg-normal",
+    "panel-active":               "primary-normal",
+    "panel-inactive":             "fg-weak",
+    # Panel buttons
     "panel-button-active-bg":     "primary-normal", # TODO
     "panel-button-active-fg":     "fg-strong", # TODO
     "panel-button-inactive-bg":   "bg-weak", # TODO
