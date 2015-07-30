@@ -6,8 +6,6 @@ client.urgent               #e00032 #e00032 #ffffff #e00032
 
 # Bar
 bar {
-
-    # Bar colors
     colors {
         background #000000
         statusline #000000

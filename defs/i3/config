@@ -6,8 +6,6 @@ client.urgent               [material:window-title-urgent-bg] [material:window-t
 
 # Bar
 bar {
-
-    # Bar colors
     colors {
         background [material:panel-bg]
         statusline [material:panel-bg]
