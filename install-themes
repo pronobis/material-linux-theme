@@ -262,6 +262,15 @@ install_gtk3()
 install_xterm()
 {
     echo "Installing XTerm theme..."
+
+    # Copy the theme
+    echo "-> Copying the theme file"
+    create_copy "$THEME_DIR/xterm/Xresources-xterm-colors" "$HOME/.Xresources-xterm-colors"
+
+    # Update Xresources
+    echo "-> Updating Xresources"
+    DISPLAY=:0 xrdb -merge "$HOME/.Xresources-xterm-colors"
+
     echo "Done!"
 }
 
