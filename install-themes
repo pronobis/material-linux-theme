@@ -187,25 +187,23 @@ install_i3()
         fi
 
         # Replace/add bar color configuration
-        # Get the new color config
+        # Get the new bar color config
         i=$(sed -n "/^[ \t]*colors[ \t]*{/,/}/p" "$THEME_DIR/i3/config")
         # Replace newlines with \n
         i=$(printf "%s" "$i" | awk 'BEGIN{ORS="\\n"}{print $0}')
+        # Check if there is a bar configuration
         if grep -q "^[ \t]*bar[ \t]*{" "$HOME/.i3/config"
-        then # Bar configuration exists
+        then
             if grep -q "^[ \t]*colors[ \t]*{" "$HOME/.i3/config"
             then # Colors configuration exists
                 # Delete existing colors config
                 # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
                 tmp=$(sed "/^[ \t]*colors[ \t]*{/,/}/d" "$HOME/.i3/config"); printf "%s\n" "$tmp" > "$HOME/.i3/config"
             fi
-        else # No bar configuration
-            # Append bar to file
-            printf "\n\n%s\n" "bar{\n\n}" >> "$HOME/.i3/config"
+            # Add the colors section to existing bar section
+            # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
+            tmp=$(sed "/^[ \t]*bar[ \t]*{/a $i" "$HOME/.i3/config"); printf "%s\n" "$tmp" > "$HOME/.i3/config"
         fi
-        # Add the colors section to existing bar section
-        # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-        tmp=$(sed "/^[ \t]*bar[ \t]*{/a $i" "$HOME/.i3/config"); printf "%s\n" "$tmp" > "$HOME/.i3/config"
     else
         # No config file, we use the theme as a stub
         echo "-> No existing i3 configuration found, using the theme as a stub"
