@@ -98,12 +98,12 @@ style "default" {
 	base[ACTIVE] = shade (0.94, @bg_color)
 
 	engine "murrine" {
-		contrast = 0.5
+		contrast = 1.8
 		arrowstyle = 2
 		reliefstyle = 3
 		highlight_shade = 1.0
 		glazestyle = 0
-		default_button_color = shade (1.1, @selected_bg_color)
+		default_button_color = "#3f51b5"
 		focusstyle = 3
 		gradient_shades = {1.1, 1.0, 1.0, 0.9}
  		handlestyle = 1
@@ -111,7 +111,7 @@ style "default" {
 		lightborderstyle = 1
 		listviewstyle = 2
 		progressbarstyle = 0
-		colorize_scrollbar = FALSE
+		colorize_scrollbar = TRUE
 		menubaritemstyle = 1
 		menubarstyle = 0
 		menustyle = 3
@@ -194,7 +194,7 @@ style "scrollbar" {
 	bg[ACTIVE] = shade (1.2, @selected_bg_color) #@bg_color
 
 	engine "murrine" {
-		contrast = 0.00
+		#contrast = 0.00
 		shadow_shades    = { 0.0, 0.0 }
 		roundness = 4
 		border_shades = { 1.42, 1.42 }
@@ -224,7 +224,7 @@ style "scale" = "button" {
 	bg[ACTIVE] = shade (0.94, @bg_color)
 
 	engine "murrine" {
-		contrast = 0.6
+		#contrast = 0.6
 		border_shades = {0.9, 0.8}
 		roundness = 7
 		lightborder_shade = 1.32
@@ -247,7 +247,7 @@ style "notebook_bg" {
 # changes the x/ythickness
 style "notebook" = "wide" {
 	engine "murrine" {
-		contrast = 1.0
+		#contrast = 1.0
 		roundness = 2
 		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 	}
@@ -255,7 +255,7 @@ style "notebook" = "wide" {
 
 style "statusbar" {
 	engine "murrine" {
-		contrast = 1.2
+		#contrast = 1.2
 	}
 }
 
@@ -364,7 +364,7 @@ style "separator_menu_item" {
 	GtkWidget::separator-height = 7
 
 	engine "murrine" {
-		contrast = 0.5
+		#contrast = 0.5
 		separatorstyle = 0
 	}
 }
@@ -379,7 +379,7 @@ style "separator_tool_item" {
 	GtkWidget::separator-height = 1
 
 	engine "murrine" {
-		contrast = 0.5
+		#contrast = 0.5
 		separatorstyle = 0
 	}
 }
@@ -427,7 +427,7 @@ style "treeview_header" = "notebook_button" {
 
 	engine "murrine" {
 		glazestyle = 1
-		contrast = 0.8
+		#contrast = 0.8
 		lightborder_shade = 1.16
 		glow_shade = 1.0
 	}
@@ -438,7 +438,7 @@ style "treeview_header_scrolled" = "treeview_header" {
 
 style "scrolledwindow" {
 	engine "murrine" {
-		contrast = 0.6
+		#contrast = 0.6
 	}
 }
 
