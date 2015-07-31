@@ -24,7 +24,7 @@
  '(highlight            ((t (:foreground "#121212" :background "#ff2d6f"))))
  '(link                 ((t (:foreground "#738ffe"))))
  '(button               ((t (:inherit link))))
- '(linum                ((t (:foreground "#969696" :background nil))))
+ '(linum                ((t (:foreground "#868686" :background nil))))
 
  ;; Errors and warnings
  '(error                ((t (:foreground "#e84e40"))))
@@ -40,7 +40,7 @@
 
  ;; Mode line & header line & powerline
  '(mode-line-buffer-id ((t (:foreground "#ffc400"))))
- '(mode-line-inactive  ((t (:box (:line-width 2 :color "#212121") :foreground "#969696" :background "#212121" :slant italic))))
+ '(mode-line-inactive  ((t (:box (:line-width 2 :color "#212121") :foreground "#868686" :background "#212121" :slant italic))))
  '(mode-line           ((t (:box (:line-width 2 :color "#3f51b5") :foreground "#ffffff" :background "#3f51b5" :weight bold))))
  '(header-line         ((t (:box (:line-width 1 :color "#3f51b5") :foreground "#7986cb" :background "#263238" :bold t))))
  '(popup-tip-face      ((t (:foreground "#212121" :background "#dadada"))))
@@ -103,7 +103,7 @@
  '(diff-added             ((t (:foreground nil                          :background "#144517"))))
  '(diff-changed           ((t (:foreground nil                          :background "#994300"))))
  '(diff-removed           ((t (:foreground nil                          :background "#851414"))))
- '(diff-context           ((t (:foreground "#969696" :background "#121212"))))
+ '(diff-context           ((t (:foreground "#868686" :background "#121212"))))
 
  ;; EDiff
  '(diff-indicator-added   ((t (:inherit diff-added))))
@@ -277,7 +277,7 @@
  '(magit-item-mark                 ((t (:foreground "#ffc400"        :background "#121212"))))
  '(magit-diff-add                  ((t (:foreground "#72d572"           :background "#144517"))))
  '(magit-diff-del                  ((t (:foreground "#f69988"        :background "#851414"))))
- '(magit-diff-none                 ((t (:foreground "#969696"))))
+ '(magit-diff-none                 ((t (:foreground "#868686"))))
  '(magit-diff-file-header          ((t (:foreground "#d4e157"    :bold t))))
  '(magit-diff-hunk-header          ((t (:foreground "#d4e157"))))
  '(magit-whitespace-warning-face   ((t (:foreground "#757575" :background "#212121"))))
