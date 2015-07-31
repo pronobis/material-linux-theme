@@ -24,7 +24,7 @@ palette = {
     "bg-weak":            "#000000",
     # Foreground
     "fg-strong":          "#ffffff",
-    "fg-normal":          "#e1e1e1",
+    "fg-normal":          "#dadada",
     "fg-weak":            "#868686",
     # Primary, secondary and accent colors
     "primary-strong":     "indigo-300",

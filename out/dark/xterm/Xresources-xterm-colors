@@ -1,6 +1,6 @@
 ! XTerm material color scheme
 
-xterm*foreground:      #e1e1e1
+xterm*foreground:      #dadada
 xterm*background:      #121212
 
 xterm*color0:          #000000

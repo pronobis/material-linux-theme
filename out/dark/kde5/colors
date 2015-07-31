@@ -28,9 +28,9 @@ ForegroundInactive=#868686
 ForegroundLink=#738ffe
 ForegroundNegative=#e84e40
 ForegroundNeutral=#ffa726
-ForegroundNormal=#e1e1e1
+ForegroundNormal=#dadada
 ForegroundPositive=#2baf2b
-ForegroundVisited=#e1e1e1
+ForegroundVisited=#dadada
 
 [Colors:Selection]
 BackgroundAlternate=#263238
@@ -42,13 +42,13 @@ ForegroundInactive=#868686
 ForegroundLink=#738ffe
 ForegroundNegative=#e84e40
 ForegroundNeutral=#ffa726
-ForegroundNormal=#e1e1e1
+ForegroundNormal=#dadada
 ForegroundPositive=#2baf2b
-ForegroundVisited=#e1e1e1
+ForegroundVisited=#dadada
 
 [Colors:Tooltip]
-BackgroundAlternate=#e1e1e1
-BackgroundNormal=#e1e1e1
+BackgroundAlternate=#dadada
+BackgroundNormal=#dadada
 DecorationFocus=#3f51b5
 DecorationHover=#3f51b5
 ForegroundActive=#3f51b5
@@ -70,9 +70,9 @@ ForegroundInactive=#868686
 ForegroundLink=#738ffe
 ForegroundNegative=#e84e40
 ForegroundNeutral=#ffa726
-ForegroundNormal=#e1e1e1
+ForegroundNormal=#dadada
 ForegroundPositive=#2baf2b
-ForegroundVisited=#e1e1e1
+ForegroundVisited=#dadada
 
 [Colors:Window]
 BackgroundAlternate=#212121
@@ -84,9 +84,9 @@ ForegroundInactive=#868686
 ForegroundLink=#738ffe
 ForegroundNegative=#e84e40
 ForegroundNeutral=#ffa726
-ForegroundNormal=#e1e1e1
+ForegroundNormal=#dadada
 ForegroundPositive=#2baf2b
-ForegroundVisited=#e1e1e1
+ForegroundVisited=#dadada
 
 [General]
 ColorScheme=Material
