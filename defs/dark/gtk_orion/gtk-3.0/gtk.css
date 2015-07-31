@@ -20,7 +20,7 @@
 
 /* shadow effects */
 @define-color light_shadow [material:fg-weak];
-@define-color dark_shadow [material:bg-weak];
+@define-color dark_shadow shade([material:bg-strong], 2.0);
 
 /* misc colors used by gtk+ */
 @define-color info_fg_color [material:success-fg];

@@ -20,7 +20,7 @@
 
 /* shadow effects */
 @define-color light_shadow #868686;
-@define-color dark_shadow #000000;
+@define-color dark_shadow shade(#212121, 2.0);
 
 /* misc colors used by gtk+ */
 @define-color info_fg_color #2baf2b;
