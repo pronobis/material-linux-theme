@@ -7,7 +7,7 @@
 ;; Set faces
 (custom-theme-set-faces
  'material ;; you must use the same theme name here...
- '(default ((t (:foreground "#dadada" :background "#121212"))))
+ '(default ((t (:foreground "#e1e1e1" :background "#121212"))))
  '(fringe  ((t (:background "#212121"))))
  '(vertical-border ((t ( :foreground "#3f51b5" :background "#3f51b5"))))
 
@@ -43,7 +43,7 @@
  '(mode-line-inactive  ((t (:box (:line-width 2 :color "#212121") :foreground "#868686" :background "#212121" :slant italic))))
  '(mode-line           ((t (:box (:line-width 2 :color "#3f51b5") :foreground "#ffffff" :background "#3f51b5" :weight bold))))
  '(header-line         ((t (:box (:line-width 1 :color "#3f51b5") :foreground "#7986cb" :background "#263238" :bold t))))
- '(popup-tip-face      ((t (:foreground "#212121" :background "#dadada"))))
+ '(popup-tip-face      ((t (:foreground "#212121" :background "#e1e1e1"))))
  '(powerline-active1   ((t (:foreground "#ffffff" :background "#3f51b5"))))
  '(powerline-active2   ((t (:foreground "#ffffff" :background "#3f51b5"))))
 
@@ -56,7 +56,7 @@
  ;; Search
  '(isearch         ((t (:foreground "#121212" :background "#ff2d6f" :bold t))))
  '(lazy-highlight  ((t (:foreground "#121212" :background "#ffc400" :bold t))))
- '(isearch-fail    ((t (:foreground "#dadada" :background "#851414"))))
+ '(isearch-fail    ((t (:foreground "#e1e1e1" :background "#851414"))))
  '(anzu-mode-line  ((t (:foreground "#ff2d6f" :background "#212121"))))
 
  ;; Standard font lock
@@ -113,17 +113,17 @@
  '(ediff-current-diff-B   ((t (:foreground nil :background "#0a8f08"))))
  '(ediff-current-diff-C   ((t (:foreground nil :background "#4e6cef"))))
  ;; ;;'(ediff-current-diff-Ancestor ((t ())))
- '(ediff-even-diff-A      ((t (:foreground "#dadada" :background "#263238"))))
- '(ediff-even-diff-B      ((t (:foreground "#dadada" :background "#263238"))))
- '(ediff-even-diff-C      ((t (:foreground "#dadada" :background "#263238"))))
+ '(ediff-even-diff-A      ((t (:foreground "#e1e1e1" :background "#263238"))))
+ '(ediff-even-diff-B      ((t (:foreground "#e1e1e1" :background "#263238"))))
+ '(ediff-even-diff-C      ((t (:foreground "#e1e1e1" :background "#263238"))))
  ;; ;;'(ediff-even-diff-Ancestor ((t ())))
  '(ediff-fine-diff-A      ((t (:foreground nil :background "#e84e40"))))
  '(ediff-fine-diff-B      ((t (:foreground nil :background "#2baf2b"))))
  '(ediff-fine-diff-C      ((t (:foreground nil :background "#738ffe"))))
  ;; ;;'(ediff-fine-diff-Ancestor ((t ())))
- '(ediff-odd-diff-A       ((t (:foreground "#dadada" :background "#263238"))))
- '(ediff-odd-diff-B       ((t (:foreground "#dadada" :background "#263238"))))
- '(ediff-odd-diff-C       ((t (:foreground "#dadada" :background "#263238"))))
+ '(ediff-odd-diff-A       ((t (:foreground "#e1e1e1" :background "#263238"))))
+ '(ediff-odd-diff-B       ((t (:foreground "#e1e1e1" :background "#263238"))))
+ '(ediff-odd-diff-C       ((t (:foreground "#e1e1e1" :background "#263238"))))
  ;;'(ediff-odd-diff-Ancestor ((t ())))
 
  ;; Flyspell
@@ -145,7 +145,7 @@
  '(helm-candidate-number     ((t (:foreground "#ffffff" :background "#3f51b5"))))
  '(helm-ff-directory         ((t (:foreground "#ffffff" :background "#121212" :bold t))))
  '(helm-ff-executable        ((t (:foreground "#d4e157"))))
- '(helm-ff-file              ((t (:foreground "#dadada"))))
+ '(helm-ff-file              ((t (:foreground "#e1e1e1"))))
  '(helm-ff-invalid-symlink   ((t (:foreground "#e84e40"))))
  '(helm-ff-prefix            ((t (:foreground "#ff2d6f"))))
  '(helm-ff-symlink           ((t (:foreground "#9ccc65"))))
@@ -154,8 +154,8 @@
  '(helm-history-remote       ((t (:foreground "#9ccc65"))))
  '(helm-header               ((t (:foreground "#ffffff" :background "#3f51b5"))))
  '(helm-match                ((t (:foreground "#ff2d6f" :background "#121212"))))
- '(helm-selection            ((t (:foreground "#dadada" :background "#303f9f" :bold t))))
- '(helm-selection-line       ((t (:foreground "#dadada" :background "#303f9f"))))
+ '(helm-selection            ((t (:foreground "#e1e1e1" :background "#303f9f" :bold t))))
+ '(helm-selection-line       ((t (:foreground "#e1e1e1" :background "#303f9f"))))
  '(helm-source-header        ((t (:foreground "#7986cb" :background "#263238" :bold t))))
  '(helm-visible-mark         ((t (:foreground "#ffc400" :background nil :bold t))))
  '(helm-buffer-directory     ((t (:inherit helm-ff-directory))))
@@ -171,7 +171,7 @@
  '(company-preview-common            ((t (:foreground "#ff2d6f"                                             ))))
  '(company-scrollbar-bg              ((t (:foreground nil                           :background "#212121"    ))))
  '(company-scrollbar-fg              ((t (:foreground nil                           :background "#303f9f"    ))))
- '(company-tooltip                   ((t (:foreground "#dadada"          :background "#212121"          :bold t))))
+ '(company-tooltip                   ((t (:foreground "#e1e1e1"          :background "#212121"          :bold t))))
  '(company-tooltip-common            ((t (:foreground "#ff2d6f"    :background "#212121"          :bold t))))
  '(company-tooltip-common-selection  ((t (:foreground "#ff2d6f"    :background "#3f51b5" :bold t))))
  '(company-tooltip-mouse             ((t (:foreground "#ffffff" :background "#3f51b5" :bold t))))
@@ -188,15 +188,15 @@
  '(yas-field-highlight-face            ((t (:foreground "#121212" :background "#ff2d6f"))))
 
  ;; Rainbow delim
- '(rainbow-delimiters-depth-1-face ((t (:foreground "#d4e157" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
- '(rainbow-delimiters-depth-2-face ((t (:foreground "#738ffe" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
- '(rainbow-delimiters-depth-3-face ((t (:foreground "#ec407a" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
- '(rainbow-delimiters-depth-4-face ((t (:foreground "#26a69a" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
- '(rainbow-delimiters-depth-5-face ((t (:foreground "#8d6e63" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
- '(rainbow-delimiters-depth-6-face ((t (:foreground "#9ccc65" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
- '(rainbow-delimiters-depth-7-face ((t (:foreground "#ba68c8" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
- '(rainbow-delimiters-depth-8-face ((t (:foreground "#26c6da" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
- '(rainbow-delimiters-depth-9-face ((t (:foreground "#2baf2b" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#dadada"))))
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "#d4e157" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#e1e1e1"))))
+ '(rainbow-delimiters-depth-2-face ((t (:foreground "#738ffe" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#e1e1e1"))))
+ '(rainbow-delimiters-depth-3-face ((t (:foreground "#ec407a" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#e1e1e1"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "#26a69a" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#e1e1e1"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "#8d6e63" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#e1e1e1"))))
+ '(rainbow-delimiters-depth-6-face ((t (:foreground "#9ccc65" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#e1e1e1"))))
+ '(rainbow-delimiters-depth-7-face ((t (:foreground "#ba68c8" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#e1e1e1"))))
+ '(rainbow-delimiters-depth-8-face ((t (:foreground "#26c6da" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#e1e1e1"))))
+ '(rainbow-delimiters-depth-9-face ((t (:foreground "#2baf2b" :background nil :weight ultra-bold :width ultra-expanded :distant-foreground "#e1e1e1"))))
  '(rainbow-delimiters-unmatched-face ((t (:inherit error))))
 
  ;; Show paren
@@ -237,7 +237,7 @@
  '(undo-tree-visualizer-active-branch-face ((t (:inherit default))))
  '(undo-tree-visualizer-default-face ((t (:inherit font-lock-comment-face))))
  '(undo-tree-visualizer-register-face ((t (:foreground "#ec407a" :background nil))))
- '(undo-tree-visualizer-current-face ((t (:foreground "#dadada" :box (:line-width 3 :color "#303f9f" :style released-button) :weight bold))))
+ '(undo-tree-visualizer-current-face ((t (:foreground "#e1e1e1" :box (:line-width 3 :color "#303f9f" :style released-button) :weight bold))))
  '(undo-tree-visualizer-unmodified-face ((t (:foreground "#2baf2b" :background nil))))
 
  ;; Outline
@@ -273,7 +273,7 @@
  '(magit-tag                       ((t (:foreground "#9ccc65"             :background nil))))
  '(magit-branch                    ((t (:foreground "#26a69a"          :background nil))))
  '(magit-log-sha1                  ((t (:foreground "#ec407a"             :background nil))))
- '(magit-item-highlight            ((t (:foreground "#dadada"      :background "#303f9f"))))
+ '(magit-item-highlight            ((t (:foreground "#e1e1e1"      :background "#303f9f"))))
  '(magit-item-mark                 ((t (:foreground "#ffc400"        :background "#121212"))))
  '(magit-diff-add                  ((t (:foreground "#72d572"           :background "#144517"))))
  '(magit-diff-del                  ((t (:foreground "#f69988"        :background "#851414"))))
@@ -500,8 +500,8 @@
  ;; '(web-mode-whitespace-face			((t (:foreground nil :background "DarkOrchid4"))))
 
  ;; ;; auto complete
- ;; '(ac-candidate-face			((t (:foreground "black" :background "#dadada"))))
- ;; '(ac-selection-face			((t (:foreground "#dadada" :background ,material/blue))))
+ ;; '(ac-candidate-face			((t (:foreground "black" :background "#e1e1e1"))))
+ ;; '(ac-selection-face			((t (:foreground "#e1e1e1" :background ,material/blue))))
  ;; '(ac-candidate-mouse-face		((t (:inherit ac-selection-face))))
  ;; '(ac-clang-candidate-face		((t (:inherit ac-candidate-face))))
  ;; '(ac-clang-selection-face		((t (:inherit ac-selection-face))))

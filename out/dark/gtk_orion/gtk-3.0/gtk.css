@@ -1,11 +1,11 @@
 /* default color scheme */
 @define-color bg_color #212121;
-@define-color fg_color #dadada;
+@define-color fg_color #e1e1e1;
 @define-color base_color #121212;
-@define-color text_color #dadada;
+@define-color text_color #e1e1e1;
 @define-color selected_bg_color #303f9f;
-@define-color selected_fg_color #dadada;
-@define-color tooltip_bg_color #dadada;
+@define-color selected_fg_color #e1e1e1;
+@define-color tooltip_bg_color #e1e1e1;
 @define-color tooltip_fg_color #212121;
 
 /* colormap actually used by the theme, to be overridden in other css files */
@@ -38,15 +38,15 @@
 
 /* widget colors */
 @define-color menubar_bg_color #212121;
-@define-color menubar_fg_color #dadada;
+@define-color menubar_fg_color #e1e1e1;
 @define-color toolbar_bg_color #212121;
-@define-color toolbar_fg_color #dadada;
+@define-color toolbar_fg_color #e1e1e1;
 @define-color menu_bg_color #212121;
-@define-color menu_fg_color #dadada;
+@define-color menu_fg_color #e1e1e1;
 @define-color titlebar_bg_color #212121;
-@define-color titlebar_fg_color #dadada;
+@define-color titlebar_fg_color #e1e1e1;
 @define-color panel_bg_color #212121;
-@define-color panel_fg_color #dadada;
+@define-color panel_fg_color #e1e1e1;
 
 /* osd */
 @define-color osd_base #333;
