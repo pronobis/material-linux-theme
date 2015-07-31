@@ -316,7 +316,30 @@ EOT
     fi
 
     echo "-> Updating GTK 3.0 configuration"
-
+    if [ -e "$HOME/.config/gtk-3.0/settings.ini" ]
+    then
+        if grep -q "\[Settings\]" "$HOME/.config/gtk-3.0/settings.ini"
+        then  # Settings group exists
+            if grep -q "gtk-theme-name" "$HOME/.config/gtk-3.0/settings.ini"
+            then  # gtk-theme-name entry exists, replace
+                # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
+                tmp=$(sed "/gtk-theme-name/c\\gtk-theme-name=Material-Orion" "$HOME/.config/gtk-3.0/settings.ini"); printf "%s\n" "$tmp" > "$HOME/.config/gtk-3.0/settings.ini"
+            else  # gtk-theme-name entry does not exists, add to [Settings]
+                # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
+                tmp=$(sed "/\[Settings\]/a\\gtk-theme-name=Material-Orion" "$HOME/.config/gtk-3.0/settings.ini"); printf "%s\n" "$tmp" > "$HOME/.config/gtk-3.0/settings.ini"
+            fi
+        else  # Settings group does not exist, append it
+            cat <<EOT >> "$HOME/.config/gtk-3.0/settings.ini"
+[Settings]
+gtk-theme-name=Material-Orion
+EOT
+        fi
+    else
+        cat <<EOT > "$HOME/.config/gtk-3.0/settings.ini"
+[Settings]
+gtk-theme-name=Material-Orion
+EOT
+    fi
 
     echo "Done!"
 }
