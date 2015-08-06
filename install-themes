@@ -356,13 +356,35 @@ install_xterm()
     echo "-> Copying the theme file"
     create_copy "$THEME_DIR/xterm/Xresources-xterm-colors" "$HOME/.Xresources-xterm-colors"
 
-    # Update Xresources
-    echo "-> Updating Xresources"
+    # Update .Xresources
+    echo "-> Adding include to $HOME/.Xresources"
+    local tmp=""
+    if [ -e "$HOME/.Xresources" ]
+    then
+        # Make backup
+        cp "$HOME/.Xresources" "$HOME/.Xresources.bak"
+        # Update
+        if grep -q ".Xresources-xterm-colors" "$HOME/.Xresources"
+        then
+            # File exists and has include, replace
+            # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
+            tmp=$(sed "/Xresources-xterm-colors/c\\#include \"$HOME/.Xresources-xterm-colors\"" "$HOME/.Xresources"); printf "%s\n" "$tmp" > "$HOME/.Xresources"
+        else
+            # File exists but has no include, append
+            echo "#include \"$HOME/.Xresources-xterm-colors\"" >> "$HOME/.Xresources"
+        fi
+    else
+        # File does not exist, create and add include
+        echo "#include \"$HOME/.Xresources-xterm-colors\"" > "$HOME/.Xresources"
+    fi
+
+    # Load .Xresources
+    echo "-> Loading .Xresources"
     if which xrdb > /dev/null
     then
-        DISPLAY=:0 xrdb -merge "$HOME/.Xresources-xterm-colors"
+        DISPLAY=:0 xrdb -merge "$HOME/.Xresources"
     else
-        echo "---> Warning: xrdb not found, Xresources will not be updated."
+        echo "---> Warning: xrdb not found, .Xresources will not be loaded now."
     fi
     echo "Done!"
 }
