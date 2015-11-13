@@ -382,7 +382,13 @@ install_xterm()
     echo "-> Loading .Xresources"
     if which xrdb > /dev/null
     then
+        set +e
         DISPLAY=:0 xrdb -merge "$HOME/.Xresources"
+        if [ $? -ne 0 ]
+        then
+            echo "---> Warning: Could not find display, .Xresources will not be loaded now."
+        fi
+        set -e
     else
         echo "---> Warning: xrdb not found, .Xresources will not be loaded now."
     fi
