@@ -94,7 +94,7 @@ install_mc()
 
     # Copy the theme
     echo "-> Copying the theme file"
-    create_copy "$THEME_DIR/mc/material.ini" "$config_dir/skins/material.ini"
+    create_copy "$THEME_DIR/mc/material256.ini" "$config_dir/skins/material256.ini"
 
     # Update mc configuration
     echo "-> Updating MC configuration"
@@ -108,17 +108,17 @@ install_mc()
         then
             # Config file exists and has skin entry, replace
             # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-            tmp=$(sed "/skin/c\\skin=$config_dir/skins/material.ini" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
+            tmp=$(sed "/skin/c\\skin=$config_dir/skins/material256.ini" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
         else
             if grep -q "\[Midnight-Commander\]" "$config_dir/ini"
             then
                 # Config files exists but has no skin entry and has [MC] entry
                 # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-                tmp=$(sed "/Midnight-Commander/a\\skin=$config_dir/skins/material.ini" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
+                tmp=$(sed "/Midnight-Commander/a\\skin=$config_dir/skins/material256.ini" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
             else
                 # Config files exists but has no skin entry and no [MC] entry
                 # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-                tmp=$(sed "1s:^:[Midnight-Commander]\nskin=$config_dir/skins/material.ini\n\n:" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
+                tmp=$(sed "1s:^:[Midnight-Commander]\nskin=$config_dir/skins/material256.ini\n\n:" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
             fi
         fi
     else
@@ -126,7 +126,7 @@ install_mc()
         cat <<EOT >> "$config_dir/ini"
 
 [Midnight-Commander]
-skin=/home/czikus/.config/mc/skins/material.ini
+skin=/home/czikus/.config/mc/skins/material256.ini
 
 EOT
     fi
