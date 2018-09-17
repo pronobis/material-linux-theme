@@ -22,3 +22,29 @@ xterm*color15:         #dadada
 
 xterm*highlightColor:  #303f9f
 xterm*cursorColor:     #ffc400
+
+
+! ST Term material color scheme
+
+st*foreground:      #dadada
+st*background:      #121212
+
+st*color0:          #000000
+st*color1:          #dd191d
+st*color2:          #0a8f08
+st*color3:          #afb42b
+st*color4:          #4e6cef
+st*color5:          #d81b60
+st*color6:          #00acc1
+st*color7:          #868686
+st*color8:          #121212
+st*color9:          #e84e40
+st*color10:         #2baf2b
+st*color11:         #d4e157
+st*color12:         #738ffe
+st*color13:         #ec407a
+st*color14:         #26c6da
+st*color15:         #dadada
+
+st*highlightColor:  #303f9f
+st*cursorColor:     #ffc400
