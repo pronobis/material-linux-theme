@@ -22,3 +22,29 @@ xterm*color15:         [material:white]
 
 xterm*highlightColor:  [material:view-selected-bg]
 xterm*cursorColor:     [material:cursor-normal-bg]
+
+
+! ST Term material color scheme
+
+st*foreground:      [material:view-fg]
+st*background:      [material:view-bg]
+
+st*color0:          [material:dark-black]
+st*color1:          [material:dark-red]
+st*color2:          [material:dark-green]
+st*color3:          [material:dark-yellow]
+st*color4:          [material:dark-blue]
+st*color5:          [material:dark-magenta]
+st*color6:          [material:dark-cyan]
+st*color7:          [material:dark-white]
+st*color8:          [material:black]
+st*color9:          [material:red]
+st*color10:         [material:green]
+st*color11:         [material:yellow]
+st*color12:         [material:blue]
+st*color13:         [material:magenta]
+st*color14:         [material:cyan]
+st*color15:         [material:white]
+
+st*highlightColor:  [material:view-selected-bg]
+st*cursorColor:     [material:cursor-normal-bg]
