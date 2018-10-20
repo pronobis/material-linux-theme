@@ -8,7 +8,10 @@ set -e
 print_usage()
 {
     echo "Usage:"
-    echo "  install.sh <theme_name>"
+    echo "  install.sh [options] <theme_name>"
+    echo
+    echo "Options:"
+    echo "  --mc-16m - Use truecolor mc theme."
     echo
     echo "Arguments:"
     echo "  <theme_name> - Name of the theme to install, e.g. dark."
@@ -92,9 +95,18 @@ install_mc()
         mkdir "$config_dir/skins"
     fi
 
+    # Choose variant
+    local mc_theme=""
+    if [ -n "$USE_MC_16M" ]
+    then
+        mc_theme="material16m.ini"
+    else
+        mc_theme="material256.ini"
+    fi
+
     # Copy the theme
     echo "-> Copying the theme file"
-    create_copy "$THEME_DIR/mc/material256.ini" "$config_dir/skins/material256.ini"
+    create_copy "$THEME_DIR/mc/$mc_theme" "$config_dir/skins/$mc_theme"
 
     # Update mc configuration
     echo "-> Updating MC configuration"
@@ -108,17 +120,17 @@ install_mc()
         then
             # Config file exists and has skin entry, replace
             # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-            tmp=$(sed "/skin/c\\skin=$config_dir/skins/material256.ini" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
+            tmp=$(sed "/skin/c\\skin=$config_dir/skins/$mc_theme" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
         else
             if grep -q "\[Midnight-Commander\]" "$config_dir/ini"
             then
                 # Config files exists but has no skin entry and has [MC] entry
                 # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-                tmp=$(sed "/Midnight-Commander/a\\skin=$config_dir/skins/material256.ini" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
+                tmp=$(sed "/Midnight-Commander/a\\skin=$config_dir/skins/$mc_theme" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
             else
                 # Config files exists but has no skin entry and no [MC] entry
                 # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-                tmp=$(sed "1s:^:[Midnight-Commander]\nskin=$config_dir/skins/material256.ini\n\n:" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
+                tmp=$(sed "1s:^:[Midnight-Commander]\nskin=$config_dir/skins/$mc_theme\n\n:" "$config_dir/ini"); printf "%s\n" "$tmp" > "$config_dir/ini"
             fi
         fi
     else
@@ -126,7 +138,7 @@ install_mc()
         cat <<EOT >> "$config_dir/ini"
 
 [Midnight-Commander]
-skin=/home/czikus/.config/mc/skins/material256.ini
+skin=/home/czikus/.config/mc/skins/$mc_theme
 
 EOT
     fi
@@ -401,6 +413,12 @@ install_xterm()
 # Main
 # ------------------------------------------------------------------------------
 # Parse args
+if [ "$1" = "--mc-16m" ]
+then
+    USE_MC_16M=1
+    shift
+fi
+
 theme_name=$1
 if [ -z "$theme_name" ]
 then
