@@ -15,7 +15,7 @@
  '(cursor  ((t (:foreground "[material:view-bg]" :background "[material:cursor-normal-bg]"))))
  '(cua-global-mark ((t (:inherit cursor))))
  '(mc/cursor-face ((t (:inherit cursor))))
- '(hl-line ((t (:background "[material:window-title-inactive-bg]"))))
+ '(hl-line ((t (:background "[material:scrollbar-bg]"))))
 
  ;; Basic
  '(region               ((t (:background "[material:view-selected-bg]"))))

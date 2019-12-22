@@ -40,7 +40,7 @@
 
  ;; Mode line & header line & powerline
  '(mode-line-buffer-id ((t (:foreground "#ffc400"))))
- '(mode-line-inactive  ((t (:box (:line-width 2 :color "#212121") :foreground "#868686" :background "#212121" :slant italic))))
+ '(mode-line-inactive  ((t (:box (:line-width 2 :color "#414141") :foreground "#868686" :background "#414141" :slant italic))))
  '(mode-line           ((t (:box (:line-width 2 :color "#3f51b5") :foreground "#ffffff" :background "#3f51b5" :weight bold))))
  '(header-line         ((t (:box (:line-width 1 :color "#3f51b5") :foreground "#7986cb" :background "#263238" :bold t))))
  '(popup-tip-face      ((t (:foreground "#212121" :background "#dadada"))))

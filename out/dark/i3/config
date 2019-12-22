@@ -1,7 +1,7 @@
 # Window colors
 client.focused              #3f51b5 #3f51b5 #ffffff #3f51b5
-client.focused_inactive     #212121 #212121 #868686 #212121
-client.unfocused            #212121 #212121 #868686 #212121
+client.focused_inactive     #414141 #414141 #868686 #414141
+client.unfocused            #414141 #414141 #868686 #414141
 client.urgent               #e00032 #e00032 #ffffff #e00032
 
 # Bar
