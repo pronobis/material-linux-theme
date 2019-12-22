@@ -41,6 +41,7 @@ theme = {
     "window-fg":                  "fg-normal",
     "window-active":              "primary-normal",
     "window-inactive":            "fg-weak",
+    "window-border":              "border",
 
     # Window buttons
     "window-button-bg":           "bg-normal",
@@ -51,7 +52,7 @@ theme = {
     "window-button-inactive-fg":  "fg-weak",
 
     # Window title
-    "window-title-inactive-bg":   "bg-strong",
+    "window-title-inactive-bg":   "border",
     "window-title-inactive-fg":   "fg-weak",
     "window-title-active-bg":     "primary-normal",
     "window-title-active-fg":     "fg-strong",

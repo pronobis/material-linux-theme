@@ -26,6 +26,8 @@ palette = {
     "fg-strong":          "#ffffff",
     "fg-normal":          "#dadada",
     "fg-weak":            "#868686",
+    # Borders
+    "border":             "#414141",
     # Primary, secondary and accent colors
     "primary-strong":     "indigo-300",
     "primary-normal":     "indigo-500",
