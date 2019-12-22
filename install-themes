@@ -293,10 +293,35 @@ install_gtk()
     echo "Installing GTK theme..."
 
     # Copy the theme
+    local theme_name=""
     echo "-> Copying the theme files"
-    rm -rf "$HOME/.local/share/themes/Material-Orion"
-    mkdir -p "$HOME/.local/share/themes/Material-Orion"
-    cp -r $THEME_DIR/gtk_orion/* "$HOME/.local/share/themes/Material-Orion/"
+    if [ -n "$USE_GTK_BREEZE" ]
+    then
+        # GTK2 themes work only from .themes, while GTK3 from .local/share/themes
+        theme_name="Material-Breeze"
+        rm -rf "$HOME/.themes/$theme_name"
+        rm -rf "$HOME/.local/share/themes/$theme_name"
+        mkdir -p "$HOME/.themes/$theme_name/gtk-2.0"
+        mkdir -p "$HOME/.themes/$theme_name/assets"
+        mkdir -p "$HOME/.local/share/themes/$theme_name/gtk-3.0"
+        mkdir -p "$HOME/.local/share/themes/$theme_name/assets"
+        cp -r $THEME_DIR/gtk_breeze/gtk-2.0/* "$HOME/.themes/$theme_name/gtk-2.0/"
+        cp -r $THEME_DIR/gtk_breeze/assets/* "$HOME/.themes/$theme_name/assets/"
+        cp -r $THEME_DIR/gtk_breeze/index.theme "$HOME/.themes/$theme_name/index.theme"
+        cp -r $THEME_DIR/gtk_breeze/gtk-3.0/* "$HOME/.local/share/themes/$theme_name/gtk-3.0/"
+        cp -r $THEME_DIR/gtk_breeze/assets/* "$HOME/.local/share/themes/$theme_name/assets/"
+        cp -r $THEME_DIR/gtk_breeze/index.theme "$HOME/.local/share/themes/$theme_name/index.theme"
+    else
+        theme_name="Material-Orion"
+        rm -rf "$HOME/.themes/$theme_name"
+        rm -rf "$HOME/.local/share/themes/$theme_name"
+        mkdir -p "$HOME/.themes/$theme_name/gtk-2.0"
+        mkdir -p "$HOME/.local/share/themes/$theme_name/gtk-3.0"
+        cp -r $THEME_DIR/gtk_orion/gtk-2.0/* "$HOME/.themes/$theme_name/gtk-2.0/"
+        cp -r $THEME_DIR/gtk_orion/index.theme "$HOME/.themes/$theme_name/index.theme"
+        cp -r $THEME_DIR/gtk_orion/gtk-3.0/* "$HOME/.local/share/themes/$theme_name/gtk-3.0/"
+        cp -r $THEME_DIR/gtk_orion/index.theme "$HOME/.local/share/themes/$theme_name/index.theme"
+    fi
 
     echo "-> Updating GTK 2.0 configuration"
     if [ -e "$HOME/.gtkrc-2.0" ]
@@ -305,25 +330,25 @@ install_gtk()
         if grep -q "include[ \t]*\".*themes.*\"" "$HOME/.gtkrc-2.0"
         then  # Entry found, replace
             # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-            tmp=$(sed "/include[ \t]*\".*themes.*\"/c\\include \"$HOME/.local/share/themes/Material-Orion/gtk-2.0/gtkrc\"" "$HOME/.gtkrc-2.0"); printf "%s\n" "$tmp" > "$HOME/.gtkrc-2.0"
+            tmp=$(sed "/include[ \t]*\".*themes.*\"/c\\include \"$HOME/.local/share/themes/$theme_name/gtk-2.0/gtkrc\"" "$HOME/.gtkrc-2.0"); printf "%s\n" "$tmp" > "$HOME/.gtkrc-2.0"
         else  # Entry not found, prepend entry to the file
             # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-            tmp=$(sed "1s:^:include \"$HOME/.local/share/themes/Material-Orion/gtk-2.0/gtkrc\"\n:" "$HOME/.gtkrc-2.0"); printf "%s\n" "$tmp" > "$HOME/.gtkrc-2.0"
+            tmp=$(sed "1s:^:include \"$HOME/.local/share/themes/$theme_name/gtk-2.0/gtkrc\"\n:" "$HOME/.gtkrc-2.0"); printf "%s\n" "$tmp" > "$HOME/.gtkrc-2.0"
         fi
         # Theme setting
         if grep -q "gtk-theme-name" "$HOME/.gtkrc-2.0"
         then  # Entry found, replace
             # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-            tmp=$(sed "/gtk-theme-name/c\\gtk-theme-name=\"Material-Orion\"" "$HOME/.gtkrc-2.0"); printf "%s\n" "$tmp" > "$HOME/.gtkrc-2.0"
+            tmp=$(sed "/gtk-theme-name/c\\gtk-theme-name=\"$theme_name\"" "$HOME/.gtkrc-2.0"); printf "%s\n" "$tmp" > "$HOME/.gtkrc-2.0"
         else  # Entry not found, prepend entry to the file
             # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-            echo "gtk-theme-name=\"Material-Orion\"" >> "$HOME/.gtkrc-2.0"
+            echo "gtk-theme-name=\"$theme_name\"" >> "$HOME/.gtkrc-2.0"
         fi
     else
         # Config file does not exist, create and add theme entry
         cat <<EOT > "$HOME/.gtkrc-2.0"
-include "$HOME/.local/share/themes/Material-Orion/gtk-2.0/gtkrc"
-gtk-theme-name="Material-Orion"
+include "$HOME/.local/share/themes/$theme_name/gtk-2.0/gtkrc"
+gtk-theme-name="$theme_name"
 EOT
     fi
 
@@ -335,21 +360,21 @@ EOT
             if grep -q "gtk-theme-name" "$HOME/.config/gtk-3.0/settings.ini"
             then  # gtk-theme-name entry exists, replace
                 # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-                tmp=$(sed "/gtk-theme-name/c\\gtk-theme-name=Material-Orion" "$HOME/.config/gtk-3.0/settings.ini"); printf "%s\n" "$tmp" > "$HOME/.config/gtk-3.0/settings.ini"
+                tmp=$(sed "/gtk-theme-name/c\\gtk-theme-name=$theme_name" "$HOME/.config/gtk-3.0/settings.ini"); printf "%s\n" "$tmp" > "$HOME/.config/gtk-3.0/settings.ini"
             else  # gtk-theme-name entry does not exists, add to [Settings]
                 # To preserve links, we do not use sed -i, we use printf since echo interprets \\ in some shells
-                tmp=$(sed "/\[Settings\]/a\\gtk-theme-name=Material-Orion" "$HOME/.config/gtk-3.0/settings.ini"); printf "%s\n" "$tmp" > "$HOME/.config/gtk-3.0/settings.ini"
+                tmp=$(sed "/\[Settings\]/a\\gtk-theme-name=$theme_name" "$HOME/.config/gtk-3.0/settings.ini"); printf "%s\n" "$tmp" > "$HOME/.config/gtk-3.0/settings.ini"
             fi
         else  # Settings group does not exist, append it
             cat <<EOT >> "$HOME/.config/gtk-3.0/settings.ini"
 [Settings]
-gtk-theme-name=Material-Orion
+gtk-theme-name=$theme_name
 EOT
         fi
     else
         cat <<EOT > "$HOME/.config/gtk-3.0/settings.ini"
 [Settings]
-gtk-theme-name=Material-Orion
+gtk-theme-name=$theme_name
 EOT
     fi
 
@@ -413,11 +438,22 @@ install_xterm()
 # Main
 # ------------------------------------------------------------------------------
 # Parse args
-if [ "$1" = "--mc-16m" ]
-then
-    USE_MC_16M=1
+while [ "$1" != "${1#--}" ]
+do
+    case "$1" in
+        "--mc-16m")
+            USE_MC_16M=1
+            ;;
+        "--gtk-breeze")
+            USE_GTK_BREEZE=1
+            ;;
+        *)
+            print_usage
+            exit 1
+            ;;
+    esac
     shift
-fi
+done
 
 theme_name=$1
 if [ -z "$theme_name" ]
