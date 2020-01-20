@@ -307,10 +307,12 @@ install_gtk()
         mkdir -p "$HOME/.local/share/themes/$theme_name/assets"
         cp -r $THEME_DIR/gtk_breeze/gtk-2.0/* "$HOME/.themes/$theme_name/gtk-2.0/"
         cp -r $THEME_DIR/gtk_breeze/assets/* "$HOME/.themes/$theme_name/assets/"
-        cp -r $THEME_DIR/gtk_breeze/index.theme "$HOME/.themes/$theme_name/index.theme"
+        cp $THEME_DIR/gtk_breeze/index.theme "$HOME/.themes/$theme_name/index.theme"
         cp -r $THEME_DIR/gtk_breeze/gtk-3.0/* "$HOME/.local/share/themes/$theme_name/gtk-3.0/"
         cp -r $THEME_DIR/gtk_breeze/assets/* "$HOME/.local/share/themes/$theme_name/assets/"
-        cp -r $THEME_DIR/gtk_breeze/index.theme "$HOME/.local/share/themes/$theme_name/index.theme"
+        cp $THEME_DIR/gtk_breeze/index.theme "$HOME/.local/share/themes/$theme_name/index.theme"
+        cp $THEME_DIR/gtk_breeze/gtk.css "$HOME/.config/gtk-3.0/gtk.css"
+        cp $THEME_DIR/gtk_breeze/colors.css "$HOME/.config/gtk-3.0/colors.css"
     else
         theme_name="Material-Orion"
         rm -rf "$HOME/.themes/$theme_name"
@@ -318,9 +320,9 @@ install_gtk()
         mkdir -p "$HOME/.themes/$theme_name/gtk-2.0"
         mkdir -p "$HOME/.local/share/themes/$theme_name/gtk-3.0"
         cp -r $THEME_DIR/gtk_orion/gtk-2.0/* "$HOME/.themes/$theme_name/gtk-2.0/"
-        cp -r $THEME_DIR/gtk_orion/index.theme "$HOME/.themes/$theme_name/index.theme"
+        cp $THEME_DIR/gtk_orion/index.theme "$HOME/.themes/$theme_name/index.theme"
         cp -r $THEME_DIR/gtk_orion/gtk-3.0/* "$HOME/.local/share/themes/$theme_name/gtk-3.0/"
-        cp -r $THEME_DIR/gtk_orion/index.theme "$HOME/.local/share/themes/$theme_name/index.theme"
+        cp $THEME_DIR/gtk_orion/index.theme "$HOME/.local/share/themes/$theme_name/index.theme"
     fi
 
     echo "-> Updating GTK 2.0 configuration"
