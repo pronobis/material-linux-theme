@@ -146,6 +146,7 @@
  '(helm-ff-directory         ((t (:foreground "#ffffff" :background "#121212" :bold t))))
  '(helm-ff-executable        ((t (:foreground "#d4e157"))))
  '(helm-ff-file              ((t (:foreground "#dadada"))))
+ '(helm-ff-file-extension    ((t (:foreground "#ffc400"))))
  '(helm-ff-invalid-symlink   ((t (:foreground "#e84e40"))))
  '(helm-ff-prefix            ((t (:foreground "#ff2d6f"))))
  '(helm-ff-symlink           ((t (:foreground "#9ccc65"))))

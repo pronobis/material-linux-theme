@@ -146,6 +146,7 @@
  '(helm-ff-directory         ((t (:foreground "[material:file-directory-fg]" :background "[material:view-bg]" :bold t))))
  '(helm-ff-executable        ((t (:foreground "[material:file-executable-fg]"))))
  '(helm-ff-file              ((t (:foreground "[material:file-normal-fg]"))))
+ '(helm-ff-file-extension    ((t (:foreground "[material:accent2-normal]"))))
  '(helm-ff-invalid-symlink   ((t (:foreground "[material:file-broken-fg]"))))
  '(helm-ff-prefix            ((t (:foreground "[material:accent1-normal]"))))
  '(helm-ff-symlink           ((t (:foreground "[material:file-link-fg]"))))
