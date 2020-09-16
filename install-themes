@@ -104,9 +104,10 @@ install_mc()
         mc_theme="material256.ini"
     fi
 
-    # Copy the theme
-    echo "-> Copying the theme file"
-    create_copy "$THEME_DIR/mc/$mc_theme" "$config_dir/skins/$mc_theme"
+    # Copy the theme (both variants)
+    echo "-> Copying the theme files"
+    create_copy "$THEME_DIR/mc/material16m.ini" "$config_dir/skins/material16m.ini"
+    create_copy "$THEME_DIR/mc/material256.ini" "$config_dir/skins/material256.ini"
 
     # Update mc configuration
     echo "-> Updating MC configuration"
