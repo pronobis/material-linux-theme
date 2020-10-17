@@ -53,6 +53,7 @@ palette = {
     "semantic9":          "green-400",
     "semantic10":         "pink-400",
     "semantic11":         "cyan-400",
+    "semantic12":         "indigo-400",
     # State colors
     "success-strong":     "green-200",
     "success-normal":     "green-400",

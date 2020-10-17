@@ -103,6 +103,7 @@ theme = {
     "file-archive-fg":            "semantic7",
     "file-source-fg":             "semantic10",
     "file-document-fg":           "semantic1",
+    "file-data-fg":               "semantic12",
     "file-media-fg":              "semantic11",
     "file-temp-fg":               "semantic5",
     "file-readonly-fg":           "semantic9",
